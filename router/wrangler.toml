@@ -1,0 +1,8 @@
+name = "kolasaar-para-sa-router"
+main = "index.js"
+compatibility_date = "2026-10-01"
+workers_dev = false
+routes = [
+  { pattern = "kolasaar.com/para/sa", zone_name = "kolasaar.com" },
+  { pattern = "kolasaar.com/para/sa/*", zone_name = "kolasaar.com" }
+]
