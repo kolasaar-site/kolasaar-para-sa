@@ -1,0 +1,29 @@
+{% macro icon(slug) %}<svg class="ico" aria-hidden="true" focusable="false" width="20" height="20"><use href="#i-{{ slug }}"/></svg>{% endmacro %}
+
+{% macro badge(o) %}{% if o.badge %}{% if o.badge[0] == 'img' %}<img class="sb sbi" src="{{ o.badge[1] }}" alt="" width="16" height="16" loading="lazy">{% else %}<span class="sb" style="background:{{ o.badge[1] }};color:{{ o.badge[2] }}" aria-hidden="true">{{ o.badge[0] }}</span>{% endif %}{% endif %}{% endmacro %}
+{% macro bico(name) %}{% set u = brand_logo(name) %}{% if u %}<img class="bi" src="{{ u }}" alt="" width="14" height="14" loading="lazy">{% else %}<span class="bi bm" aria-hidden="true">{{ brand_initial(name) }}</span>{% endif %}{% endmacro %}
+
+{% macro card(p, lang, t) %}
+<a class="item" href="{{ href_of(p, lang) }}"{% if p.nopage and not cfg.thin_viewer %} target="_blank" rel="sponsored nofollow noopener"{% endif %}>
+  {% if p.image %}<img class="thumb" src="{{ p.thumb or p.image }}" alt="{{ p.name[lang] }}" loading="lazy" referrerpolicy="no-referrer" width="84" height="84" onerror="this.onerror=null;this.outerHTML='<span class=thumb-empty aria-hidden=true></span>'">{% else %}<span class="thumb-empty" aria-hidden="true"></span>{% endif %}
+  <span class="brand">{{ bico(p.brand) }}{{ p.brand }}</span>
+  <span class="title">{{ p.name[lang] }}</span>
+  <span class="chips">{% for o in p.offers[:4] %}<span class="chip{{ ' low' if loop.first else '' }}{{ '' if o.in_stock else ' out' }}">{{ badge(o) }}{{ o.store_name }} <b>{{ fmt_price(o.price) }}</b></span>{% endfor %}{% if p.offers | length > 4 %}<span class="chip more">+{{ p.offers | length - 4 }}</span>{% endif %}{% if p.change7 is not none and p.change7 != 0 %}<span class="chg {{ 'down' if p.change7 < 0 else 'up' }}" dir="ltr">{{ '%+.1f' | format(p.change7) }}%</span>{% endif %}</span>
+  <span class="buy"><span class="sticker">{{ money(p.best.price, lang) }}</span><span class="muted">{{ t.at }} {{ p.best.store_name }}</span></span>
+</a>
+{% endmacro %}
+
+{% macro crumbs(items) %}
+<nav class="crumbs" aria-label="breadcrumb">{% for name, url in items %}{% if not loop.last %}<a href="{{ url }}">{{ name }}</a> › {% else %}<span>{{ name }}</span>{% endif %}{% endfor %}</nav>
+{% endmacro %}
+
+{% macro faq(items) %}
+{% for q, a in items %}<details><summary>{{ q }}</summary><p>{{ a }}</p></details>{% endfor %}
+{% endmacro %}
+
+{% macro searchbox(lang, t, cls='') %}
+<form class="search {{ cls }}" role="search" data-lang="{{ lang }}" data-api="/api/products.json" data-none="{{ t.no_match }}" autocomplete="off">
+  <input type="search" name="q" placeholder="{{ t.search_ph }}" aria-label="{{ t.search }}" enterkeyhint="search">
+  <ul class="results" hidden></ul>
+</form>
+{% endmacro %}

@@ -1,0 +1,116 @@
+{% from "macros.html" import searchbox, icon with context %}<!doctype html>
+<html lang="{{ lang }}" dir="{{ 'rtl' if lang == 'ar' else 'ltr' }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ canonical }}">
+{% for l, u in alternates.items() %}<link rel="alternate" hreflang="{{ l }}" href="{{ u }}">
+{% endfor %}<link rel="alternate" hreflang="x-default" href="{{ alternates['ar'] }}">
+<meta name="robots" content="{{ 'noindex,nofollow' if cfg.demo_mode else 'noindex,follow' if noindex else 'index,follow,max-image-preview:large,max-snippet:-1' }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta property="og:locale" content="{{ 'ar_SA' if lang == 'ar' else 'en_US' }}">
+{% if og_image %}<meta property="og:image" content="{{ og_image }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ og_image }}">{% else %}<meta name="twitter:card" content="summary">{% endif %}
+<link rel="icon" href="/favicon.ico" sizes="48x48"><link rel="icon" type="image/svg+xml" href="/static/icon.svg"><link rel="icon" type="image/png" sizes="192x192" href="/static/icon-192.png"><link rel="apple-touch-icon" href="/static/apple-touch-icon.png"><meta name="theme-color" content="#0B6B5B">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&display=optional" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Noto+Kufi+Arabic:wght@600;700;800&display=optional"></noscript>
+<style>{{ css|safe }}</style>
+{% for block in ld %}<script type="application/ld+json">{{ block | jsonld }}</script>
+{% endfor %}{% block head_extra %}{% endblock %}</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true"><defs>
+<symbol id="i-visage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M8.6 10.4h.01M15.4 10.4h.01M8.8 14.6c.9 1.3 2 1.9 3.2 1.9s2.3-.6 3.2-1.9"/></symbol>
+<symbol id="i-corps" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 3h3v2.5h-3zM12 5.5V8M9 8h6l1 3.2v8.3a1.5 1.5 0 01-1.5 1.5h-5A1.5 1.5 0 018 19.5v-8.3z"/><path d="M10 14.5h4"/></symbol>
+<symbol id="i-cheveux" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c-2 4.5 2 6 0 9s2 6 0 9M12 3c-2 4.5 2 6 0 9s2 6 0 9M17 3c-2 4.5 2 6 0 9s2 6 0 9"/></symbol>
+<symbol id="i-solaire" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M18.7 5.3l-1.6 1.6M6.9 17.1l-1.6 1.6"/></symbol>
+<symbol id="i-bebe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 2.5h3M10 5.2c0-1 .8-1.7 2-1.7s2 .7 2 1.7v1H10z"/><rect x="8" y="6.2" width="8" height="14.8" rx="2.6"/><path d="M8 11.5h3M8 14.5h3M8 17.5h3"/></symbol>
+<symbol id="i-complements" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><g transform="rotate(-45 12 12)"><rect x="2.8" y="8" width="18.4" height="8" rx="4"/><path d="M12 8v8"/></g></symbol>
+<symbol id="i-hygiene" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="14.5" r="5.2"/><circle cx="17" cy="8" r="3.2"/><circle cx="18" cy="17" r="2"/><path d="M7 13a2.4 2.4 0 012-1.6"/></symbol>
+<symbol id="i-maquillage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="12.5" width="8" height="8.5" rx="1.2"/><path d="M9 12.5V9.5l3-6.3 3 6.3v3M8 16.5h8"/></symbol>
+<symbol id="i-parfum" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="10" width="12" height="11" rx="2.6"/><path d="M10 10V7.5h4V10M9 4h6v3.5H9zM12 13.5v4"/></symbol>
+<symbol id="i-minceur" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16" rx="3.2"/><path d="M7.8 10a5.3 5.3 0 018.4 0M12 10.2l2-2.4"/></symbol>
+<symbol id="i-materiel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14.3V5.5a2 2 0 014 0v8.8a4 4 0 11-4 0z"/><path d="M12 9v7.4"/></symbol>
+<symbol id="i-phones" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><path d="M11 18.5h2"/></symbol>
+<symbol id="i-laptops" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4.5" y="5" width="15" height="10.5" rx="1.6"/><path d="M2.5 19h19"/></symbol>
+<symbol id="i-tvs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8 20.5h8M12 16.5v4"/></symbol>
+<symbol id="i-fridges" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path d="M6 10h12M9 6v2M9 13v3"/></symbol>
+<symbol id="i-acs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><path d="M7 15c0 1.8 1 2.6 1 4.5M12 15v4.5M17 15c0 1.8-1 2.6-1 4.5"/></symbol>
+<symbol id="i-microwaves" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="5" width="19" height="14" rx="2"/><rect x="5.5" y="8" width="9.5" height="8" rx="1"/><path d="M18.5 9h.01M18.5 12h.01M18.5 15h.01"/></symbol>
+<symbol id="i-watches" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="6.5" width="10" height="11" rx="3"/><path d="M9 6.5l.7-3.5h4.6l.7 3.5M9 17.5l.7 3.5h4.6l.7-3.5M12 10v2.2l1.4 1"/></symbol>
+<symbol id="i-earbuds" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14v-2a8 8 0 0116 0v2"/><rect x="2.8" y="13" width="4" height="7" rx="1.6"/><rect x="17.2" y="13" width="4" height="7" rx="1.6"/></symbol>
+<symbol id="i-consoles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="8" width="19" height="9" rx="4.5"/><path d="M7.5 11v3M6 12.5h3M15.5 11.5h.01M18 13.5h.01"/></symbol>
+<symbol id="i-washers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2.5" width="16" height="19" rx="2"/><circle cx="12" cy="13.5" r="4.5"/><path d="M7.5 6h.01M10.5 6h.01"/></symbol>
+<symbol id="i-ovens" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 8h18"/><rect x="6" y="11" width="12" height="7" rx="1"/><path d="M7 5.5h.01M10 5.5h.01"/></symbol>
+<symbol id="i-printers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9V3.5h10V9"/><rect x="3.5" y="9" width="17" height="8" rx="2"/><path d="M7 14h10v6.5H7z"/><path d="M17 12h.01"/></symbol>
+<symbol id="i-consumables" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3.2 4 6 7 6 10.5a6 6 0 01-12 0C6 10 8.8 7 12 3z"/><path d="M9.5 14a2.8 2.8 0 002.5 2.6"/></symbol>
+<symbol id="i-networking" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 13V8.5M17 13V8.5M7.5 16.5h.01M11 16.5h.01"/><path d="M9.2 6.2a4 4 0 015.6 0M10.8 8.2a1.6 1.6 0 012.4 0" /></symbol>
+<symbol id="i-storage" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5.5" width="17" height="13" rx="2.6"/><path d="M3.5 14h17M7 16.3h.01M17 16.3h.01"/><circle cx="12" cy="9.6" r="1.4"/></symbol>
+<symbol id="i-components" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1.8"/><rect x="10" y="10" width="4" height="4" rx=".8"/><path d="M10 3v4M14 3v4M10 17v4M14 17v4M3 10h4M3 14h4M17 10h4M17 14h4"/></symbol>
+<symbol id="i-desktops" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4" width="13" height="10" rx="1.6"/><path d="M6 18.5h6M9 14v4.5"/><rect x="17.5" y="6" width="4" height="12.5" rx="1.2"/><path d="M19.5 15.5h.01"/></symbol>
+<symbol id="i-peripherals" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="6.5" y="2.8" width="11" height="18.4" rx="5.5"/><path d="M12 2.8v7M6.5 10h11"/></symbol>
+<symbol id="i-audio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5.5" y="2.5" width="13" height="19" rx="2.6"/><circle cx="12" cy="14.8" r="3.4"/><circle cx="12" cy="7.2" r="1.2"/></symbol>
+<symbol id="i-cameras" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l1.5-2.5h7L17 8h3a1.5 1.5 0 011.5 1.5v8A1.5 1.5 0 0120 19H4a1.5 1.5 0 01-1.5-1.5v-8A1.5 1.5 0 014 8z"/><circle cx="12" cy="13.2" r="3.7"/></symbol>
+<symbol id="i-vacuums" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.6"/><path d="M5.6 7.4l2 1.8M18.4 7.4l-2 1.8"/></symbol>
+<symbol id="i-kitchen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10.5h16v6.5a3 3 0 01-3 3H7a3 3 0 01-3-3z"/><path d="M2.5 10.5h19M9 7c0-1.4 1.2-1.6 1.2-3M14 7c0-1.4 1.2-1.6 1.2-3"/></symbol>
+<symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 11 12 4l8.5 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/></symbol>
+<symbol id="i-gaming" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6.5" width="19" height="11" rx="2.2"/><path d="M6.5 10h.01M10 10h.01M13.5 10h.01M17 10h.01M7.5 14h9"/></symbol>
+<symbol id="i-power" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 5 13.5h6l-1 8 8-11h-6z"/></symbol>
+<symbol id="i-tools" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 00-5 5.4L3.5 18a2 2 0 003 3l6.3-6.2a4 4 0 005.4-5l-2.6 2.6-2.4-.6-.6-2.4z"/></symbol>
+<symbol id="i-smart-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 11 12 4l8.5 7"/><path d="M6 9.5V20h12V9.5"/><path d="M9.4 14.6a3.8 3.8 0 015.2 0M11.9 17.4h.2"/></symbol>
+<symbol id="i-other" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="4" width="6.5" height="6.5" rx="1.5"/><rect x="4" y="13.5" width="6.5" height="6.5" rx="1.5"/><rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1.5"/></symbol>
+</defs></svg>
+{% if cfg.demo_mode %}<div class="demo">{{ t.demo }}</div>{% endif %}
+<header class="top">
+<div class="wrap bar">
+  <a class="logo" href="/{{ lang }}/"><i aria-hidden="true"></i><span class="nm"><b>{{ site }}</b><small>{{ country_name[lang] }}</small></span></a>
+  {{ searchbox(lang, t, "head-search") }}
+  <div class="tools">
+    <details class="dd">
+      <summary aria-label="{{ t.pick_country }}"><span class="cc">{{ country_code | upper }}</span><span class="lbl">{{ country_name[lang] }}</span><svg class="chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <ul>{% for c in country_list %}<li><a href="/{{ c.code }}/{{ lang if lang == 'ar' else c.l2 }}/"{% if c.code == country_code %} aria-current="true"{% endif %}><span class="cc">{{ c.code | upper }}</span>{{ c[lang] }}</a></li>{% endfor %}</ul>
+    </details>
+    <details class="dd">
+      <summary aria-label="{{ t.pick_lang }}"><svg class="globe" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.7 3.9 5.7 3.9 9s-1.3 6.3-3.9 9c-2.6-2.7-3.9-5.7-3.9-9S9.4 5.7 12 3z"/></svg><span class="lbl">{{ lang_names[lang] }}</span><svg class="chev" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <ul><li><a href="{{ paths['ar'] }}" hreflang="ar" lang="ar"{% if lang == 'ar' %} aria-current="true"{% endif %}>{{ lang_names['ar'] }}</a></li><li><a href="{{ paths['en'] }}" hreflang="{{ 'fr' if lang_names['en'] == 'Français' else 'en' }}" lang="{{ 'fr' if lang_names['en'] == 'Français' else 'en' }}"{% if lang == 'en' %} aria-current="true"{% endif %}>{{ lang_names['en'] }}</a></li></ul>
+    </details>
+  </div>
+</div>
+<nav class="cats" aria-label="{{ t.nav_label }}"><div class="wrap"><div class="sc">
+  {% for c in cfg.categories %}<a href="{{ c.href[lang] }}">{{ icon(c.slug) }}<span>{{ c.name[lang] }}</span></a>{% endfor %}
+  <a class="more" href="/{{ lang }}/methodology/">{{ t.methodology }}</a>
+</div></div></nav>
+</header>
+<main>{% block content %}{% endblock %}</main>
+<footer><div class="wrap">
+  <nav class="fnav" aria-label="{{ 'الأقسام' if lang == 'ar' else 'Categories' }}">
+    <div><strong>{{ 'الأقسام' if lang == 'ar' else 'Categories' }}</strong>{% for c in cfg.categories %}<a href="{{ c.href[lang] }}">{{ c.name[lang] }}</a>{% endfor %}</div>
+    {% if footer_brands %}<div><strong>{{ 'الأكثر بحثاً' if lang == 'ar' else 'Popular' }}</strong>{% for label, url in footer_brands %}<a href="{{ url }}">{{ label }}</a>{% endfor %}</div>{% endif %}
+  </nav>
+  <p>{{ t.disclosure }}</p>
+  <p>{{ t.updated }}: <time datetime="{{ updated_iso }}">{{ updated }}</time> · <a href="/{{ lang }}/about/">{{ t.about }}</a> · <a href="/{{ lang }}/methodology/">{{ t.methodology }}</a> · <a href="/{{ lang }}/privacy/">{{ t.privacy }}</a> · <a href="/api/products.json">{{ t.data }}</a> · <a href="/llms.txt">llms.txt</a></p>
+</div></footer>
+<script>
+document.addEventListener("click",function(e){document.querySelectorAll("details.dd[open]").forEach(function(d){if(!d.contains(e.target))d.removeAttribute("open")})});
+(function(){var forms=document.querySelectorAll("form.search");if(!forms.length)return;var loading=null;
+function load(u){return loading||(loading=fetch(u).then(function(r){return r.json()}).then(function(j){return j.products||[]}).catch(function(){return[]}))}
+function norm(s){return(s||"").toLowerCase().replace(/[ً-ٰٟ]/g,"").replace(/[أإآ]/g,"ا").replace(/ة/g,"ه").replace(/ى/g,"ي")}
+forms.forEach(function(f){var input=f.querySelector("input"),box=f.querySelector(".results"),lang=f.dataset.lang;
+f.addEventListener("submit",function(e){e.preventDefault();var a=box.querySelector("a");if(a)location.href=a.href});
+input.addEventListener("focus",function(){load(f.dataset.api)});
+input.addEventListener("input",function(){var q=norm(input.value.trim());box.textContent="";if(q.length<2){box.hidden=true;return}
+load(f.dataset.api).then(function(list){var terms=q.split(/\s+/);var hits=list.filter(function(p){var h=norm(p.name.ar+" "+p.name.en+" "+p.brand);return terms.every(function(t){return h.indexOf(t)>-1})}).slice(0,8);
+box.textContent="";if(!hits.length){var n=document.createElement("li");n.className="none";n.textContent=f.dataset.none;box.appendChild(n);box.hidden=false;return}
+hits.forEach(function(p){var li=document.createElement("li"),a=document.createElement("a"),n=document.createElement("span"),pr=document.createElement("b");
+a.href=new URL(p.url[lang]).pathname;n.textContent=p.name[lang];pr.textContent=Number(p.best.price).toLocaleString("en-US",{minimumFractionDigits:{{ dec }},maximumFractionDigits:{{ dec }}})+(lang==="ar"?" ر.س":" SAR");a.appendChild(n);a.appendChild(pr);li.appendChild(a);box.appendChild(li)});box.hidden=false})});
+document.addEventListener("click",function(e){if(!f.contains(e.target))box.hidden=true});
+input.addEventListener("keydown",function(e){if(e.key==="Escape"){box.hidden=true}})})})();
+</script>
+</body>
+</html>

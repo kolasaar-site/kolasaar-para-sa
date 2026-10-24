@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% from "macros.html" import crumbs with context %}
+{% block content %}
+{{ crumbs([(t.home, '/' ~ lang ~ '/'), (cat.name[lang], '/' ~ lang ~ '/' ~ cat.slug ~ '/'), (a.name[lang] ~ ' ' ~ t.vs ~ ' ' ~ b.name[lang], paths[lang])]) }}
+<h1>{{ a.name[lang] }} {{ t.vs }} {{ b.name[lang] }}</h1>
+<p>{% if lang == 'ar' %}{{ cheaper.name[lang] }} هو الأرخص اليوم بفارق {{ money(diff, lang) }}.{% else %}{{ cheaper.name[lang] }} is cheaper today by {{ money(diff, lang) }}.{% endif %}
+ <span class="muted">{{ t.updated }}: <time datetime="{{ updated_iso }}">{{ updated }}</time></span></p>
+<div class="tablewrap"><table>
+  <thead><tr><th>{{ t.feature }}</th><th><a href="{{ a.href[lang] }}">{{ a.name[lang] }}</a></th><th><a href="{{ b.href[lang] }}">{{ b.name[lang] }}</a></th></tr></thead>
+  <tbody>
+    <tr><th scope="row">{{ t.best_price }}</th><td>{{ money(a.best.price, lang) }}</td><td>{{ money(b.best.price, lang) }}</td></tr>
+    <tr><th scope="row">{{ t.cheapest_store }}</th><td>{{ a.best.store_name }}</td><td>{{ b.best.store_name }}</td></tr>
+    <tr><th scope="row">{{ t.low30 }}</th><td>{{ money(a.low30, lang) }}</td><td>{{ money(b.low30, lang) }}</td></tr>
+    {% for label, va, vb in rows %}<tr><th scope="row">{{ label }}</th><td>{{ va }}</td><td>{{ vb }}</td></tr>{% endfor %}
+  </tbody>
+</table></div>
+{% endblock %}

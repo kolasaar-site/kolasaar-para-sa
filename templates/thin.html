@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="tv" data-lang="{{ lang }}">
+<p class="muted">{{ 'جارٍ تحميل المقارنة...' if lang == 'ar' else 'Loading comparison...' }}</p>
+</div>
+<noscript><p>{{ 'يلزم تفعيل جافاسكربت لعرض المقارنة.' if lang == 'ar' else 'JavaScript is required to show this comparison.' }}</p></noscript>
+<script>
+(function(){
+var lang="{{ lang }}",DEC={{ dec }},root=document.getElementById("tv"),id=decodeURIComponent((location.hash||"").slice(1));
+var CUR=lang==="ar"?" ر.س":" SAR",T={go:"{{ t.go_store }}",low:lang==="ar"?"الأقل سعراً":"Lowest price",out:lang==="ar"?"غير متوفر":"Out of stock",all:lang==="ar"?"كل ":"All ",missing:lang==="ar"?"لم نجد هذا المنتج. تصفح الأقسام من الصفحة الرئيسية.":"We could not find this product. Browse the categories from the home page.",home:"{{ t.home }}",stores:lang==="ar"?"الأسعار في المتاجر":"Prices by store"};
+function el(t,c,x){var e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=x;return e}
+function money(v){return Number(v).toLocaleString("en-US",{minimumFractionDigits:DEC,maximumFractionDigits:DEC})+CUR}
+function show(p){
+ document.title=p.n[lang]+" | {{ site }}";root.textContent="";
+ var h=el("h1",null,p.n[lang]);root.appendChild(h);
+ if(p.i){var im=el("img","thumb");im.src=p.i;im.alt=p.n[lang];im.width=160;im.height=160;im.referrerPolicy="no-referrer";im.onerror=function(){im.remove()};root.appendChild(im)}
+ root.appendChild(el("p","muted",p.b+" · {{ updated }}"));
+ root.appendChild(el("h2",null,T.stores));
+ var list=el("div","list");var o=p.o.slice().sort(function(a,b){return a[1]-b[1]});
+ o.forEach(function(r,k){var a=el("a","item");a.href=r[3];a.target="_blank";a.rel="sponsored nofollow noopener";
+  a.appendChild(el("span","title",r[0]));
+  var buy=el("span","buy");buy.appendChild(el("span","sticker",money(r[1])));
+  buy.appendChild(el("span","muted",(k===0?T.low+" · ":"")+(r[2]?"":T.out+" · ")+T.go));a.appendChild(buy);list.appendChild(a)});
+ root.appendChild(list);
+ var back=el("p");var l=el("a",null,T.all+(p.cn?p.cn[lang]:""));l.href="/"+lang+"/"+p.c+"/";back.appendChild(l);root.appendChild(back);
+}
+fetch("/api/thin.json").then(function(r){return r.json()}).then(function(d){var p=d[id];if(p)show(p);else{root.textContent="";root.appendChild(el("p",null,T.missing));var a=el("a",null,T.home);a.href="/"+lang+"/";root.appendChild(a)}}).catch(function(){root.textContent=T.missing});
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, crumbs, faq as faqs, icon, bico with context %}
+{% block content %}
+{% if h1_text %}{{ crumbs([(t.home, '/' ~ lang ~ '/'), (cat.name[lang], cat.href[lang]), (h1_text, paths[lang])]) }}{% else %}{{ crumbs([(t.home, '/' ~ lang ~ '/'), (cat.name[lang], paths[lang])]) }}{% endif %}
+<h1>{{ icon(cat.slug) }}{{ h1_text or (('أسعار ' ~ cat.name[lang] ~ ' في السعودية') if lang == 'ar' else (cat.name[lang] ~ ' prices in Saudi Arabia')) }}</h1>
+<p>{{ intro }}</p>
+<p class="muted">{{ t.updated }}: <time datetime="{{ updated_iso }}">{{ updated }}</time></p>
+{% if brand_links %}<nav class="brands" aria-label="{{ 'الماركات' if lang == 'ar' else 'Brands' }}"><strong>{{ 'الماركات' if lang == 'ar' else 'Brands' }}:</strong> {% for name, url, n in brand_links %}<a href="{{ url }}">{{ bico(name) }}{{ name }} ({{ n }})</a>{% if not loop.last %} · {% endif %}{% endfor %}</nav>{% endif %}
+<div class="list">{% for p in group %}{{ card(p, lang, t) }}{% endfor %}</div>
+{% if nav.total > 1 %}<nav class="pager" aria-label="pages">{% if nav.prev %}<a href="{{ nav.prev }}" rel="prev">{{ t.prev }}</a>{% endif %}{% set ns = namespace(last=0) %}{% for k, u in nav.pages %}{% if k - ns.last > 1 %}<span class="gap">…</span>{% endif %}{% if k == nav.n %}<span aria-current="page"><b>{{ k }}</b></span>{% else %}<a href="{{ u }}">{{ k }}</a>{% endif %}{% set ns.last = k %}{% endfor %}{% if nav.next %}<a href="{{ nav.next }}" rel="next">{{ t.next }}</a>{% endif %}</nav>{% endif %}
+{% if guide %}<section id="guide" class="guide"><h2>{{ guide.title }}</h2>{% for h, txt in guide.sections %}<h3>{{ h }}</h3><p>{{ txt }}</p>{% endfor %}</section>{% endif %}
+<h2>{{ t.faq }}</h2>
+{{ faqs(faq) }}
+{% endblock %}

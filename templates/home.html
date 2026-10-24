@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, searchbox, icon, faq as faqs with context %}
+{% block content %}
+<section class="hero">
+  <h1>{{ h1 }}</h1>
+  <p>{{ t.min_note }}</p>
+  {{ searchbox(lang, t, "hero-search") }}
+  <div class="tiles">
+    {% for c in categories %}<a class="tile" href="{{ c.href[lang] }}">{{ icon(c.slug) }}<strong>{{ c.name[lang] }}</strong><span class="muted">{{ c.count }} {{ t.products_n }}</span></a>{% endfor %}
+  </div>
+  <p class="muted stores">{{ t.compared_stores }}: {{ store_names | join("، " if lang == "ar" else ", ") }} · {{ t.updated }}: <time datetime="{{ updated_iso }}">{{ updated }}</time></p>
+</section>
+{% if drops %}<section>
+  <h2>{{ t.top_drops }}</h2>
+  <div class="list">{% for p in drops %}{{ card(p, lang, t) }}{% endfor %}</div>
+</section>{% endif %}
+<section>
+  <h2>{{ t.featured }}</h2>
+  <div class="list">{% for p in products %}{{ card(p, lang, t) }}{% endfor %}</div>
+</section>
+{% for c, top in cat_blocks %}<section>
+  <h2><a href="{{ c.href[lang] }}">{{ icon(c.slug) }}{{ ('أسعار ' ~ c.name[lang] ~ ' اليوم') if lang == 'ar' else (c.name[lang] ~ ' prices today') }}</a></h2>
+  <div class="list">{% for p in top %}{{ card(p, lang, t) }}{% endfor %}</div>
+  <p><a href="{{ c.href[lang] }}">{{ ('عرض كل ' ~ c.name[lang] ~ ' (' ~ c.count ~ ')') if lang == 'ar' else ('See all ' ~ c.name[lang] ~ ' (' ~ c.count ~ ')') }}</a></p>
+</section>{% endfor %}
+<section class="about-home">
+  <h2>{{ ('عن المقارنة' if lang == 'ar' else 'About this comparison') }}</h2>
+  <p>{{ seo_intro }}</p>
+  <h2>{{ t.faq }}</h2>
+  {{ faqs(seo_faq) }}
+</section>
+{% endblock %}

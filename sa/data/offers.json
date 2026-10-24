@@ -1,0 +1,558 @@
+{
+ "updated": "2026-10-24T17:22:58+00:00",
+ "offers": [
+  {
+   "product_id": "pp-eucerin-lip-active-4-8-g",
+   "store": "avnzor",
+   "price": 47.54,
+   "url": "https://avnzor.com/products/eucerin-eucerin-lip-balm-lab-active",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-eucerin-lip-active-4-8-g",
+   "store": "innova",
+   "price": 57.5,
+   "url": "https://innovapharmacy.com/en/eucerin-lip-active-4-8-gm",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-cantu-avocado-hydrating-curl-activator-355-ml",
+   "store": "avnzor",
+   "price": 34.89,
+   "url": "https://avnzor.com/products/cantu-avocado-hydrating-curl-activator",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-cantu-avocado-hydrating-curl-activator-355-ml",
+   "store": "innova",
+   "price": 40.3,
+   "url": "https://innovapharmacy.com/en/cantu-avocado-hydrating-curl-activator-355-ml",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-cantu-shea-butter-coconut-oil-shine-hold-mist-237ml",
+   "store": "avnzor",
+   "price": 33.64,
+   "url": "https://avnzor.com/products/cantu-shea-butter-oil-hair-spray",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-cantu-shea-butter-coconut-oil-shine-hold-mist-237ml",
+   "store": "innova",
+   "price": 35.75,
+   "url": "https://innovapharmacy.com/en/cantu-shea-butter-coconut-oil-shine-and-hold-mist-237-ml",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-johnson-johnson-baby-oil-gel-fresh-blossom-200-ml",
+   "store": "avnzor",
+   "price": 23.05,
+   "url": "https://avnzor.com/products/johnsons-johnson-baby-oil-gel-refreshing-floral",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-johnson-johnson-baby-oil-gel-fresh-blossom-200-ml",
+   "store": "whites",
+   "price": 29.51,
+   "url": "https://www.whites.sa/en-sa/johnson-johnson-baby-oil-gel-fresh-blossom-200-ml/",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sensodyne-repair-protect-toothpaste-75ml",
+   "store": "avnzor",
+   "price": 45.16,
+   "url": "https://avnzor.com/products/sensodyne-cavity-sensitivity-toothpaste-75ml-repair-protect",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sensodyne-repair-protect-toothpaste-75ml",
+   "store": "daralamirat",
+   "price": 39.96,
+   "url": "https://daralamirat.com.sa/en/sensodyne-advanced-repair-protect-deep-repair-75ml/p1339973662",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sensodyne-repair-protect-toothpaste-75ml",
+   "store": "whites",
+   "price": 34.32,
+   "url": "https://www.whites.sa/en-sa/sensodyne-repair-protect-whiting-toothpaste-75ml/",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-3499320011914",
+   "store": "careksa",
+   "price": 90.96,
+   "url": "https://care-ksa.com/products/cetaphil-moisturizing-cream-453g",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-3499320011914",
+   "store": "knooz",
+   "price": 78.5,
+   "url": "https://knooz-store.com/products/كريم-سيتافيل-المرطب-453-غرام",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-3499320011884",
+   "store": "careksa",
+   "price": 70.96,
+   "url": "https://care-ksa.com/products/cetaphil-moisturizing-cream-250g",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-3499320011884",
+   "store": "knooz",
+   "price": 59.0,
+   "url": "https://knooz-store.com/products/كريم-مرطب-من-سيتافيل-250غ",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-qv-moisturizing-skin-cream-compress-500-ml",
+   "store": "careksa",
+   "price": 90.96,
+   "url": "https://care-ksa.com/products/qv-cream-500g-hydrating",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-qv-moisturizing-skin-cream-compress-500-ml",
+   "store": "vaneer",
+   "price": 89.0,
+   "url": "https://vaneersa.com/en/QV-Moisturizing-Cream-500-ml/p937707565",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8809647392583",
+   "store": "careksa",
+   "price": 62.96,
+   "url": "https://care-ksa.com/products/some-by-mi-retinol-eye-cream",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8809647392583",
+   "store": "knooz",
+   "price": 61.5,
+   "url": "https://knooz-store.com/products/سم-باي-مي-كريم-ريتينول-لمحيط-العين-30مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-vaseline-jelly-original-care-450ml",
+   "store": "careksa",
+   "price": 25.0,
+   "url": "https://care-ksa.com/products/vaseline-original-jelly-450ml",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-vaseline-jelly-original-care-450ml",
+   "store": "daralamirat",
+   "price": 18.85,
+   "url": "https://daralamirat.com.sa/en/vaseline-original-moisturizing-jelly-450ml-dar-al-amirat/p106965829",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-4000196901415",
+   "store": "careksa",
+   "price": 29.96,
+   "url": "https://care-ksa.com/products/glysolid-cream-intensive-hydration",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-4000196901415",
+   "store": "knooz",
+   "price": 25.25,
+   "url": "https://knooz-store.com/products/كريم-جليسرين-من-جليسوليد-400مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-garnier-micellar-cleanser-for-sensitive-skin-400-ml",
+   "store": "careksa",
+   "price": 22.96,
+   "url": "https://care-ksa.com/products/garnier-micellar-water-sensitive-skin-400ml",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-garnier-micellar-cleanser-for-sensitive-skin-400-ml",
+   "store": "daralamirat",
+   "price": 20.7,
+   "url": "https://daralamirat.com.sa/en/Garnier-Makeup-Remover-for-Sensitive-Skin-|-Deep-Cleansing-without-Irritation/p798643756",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8682536051316",
+   "store": "careoutlet",
+   "price": 23.0,
+   "url": "https://care-outlet.com/products/flormar-compact-powder-foundation-091-medium-cream-rose",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8682536051316",
+   "store": "knooz",
+   "price": 26.81,
+   "url": "https://knooz-store.com/products/فلورمار-بودرة-مضغوطة-091-medium-cream-rose",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8682536028844",
+   "store": "careoutlet",
+   "price": 20.7,
+   "url": "https://care-outlet.com/products/flormar-extreme-tattoo-brow-gel-pencil-02-brown",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8682536028844",
+   "store": "knooz",
+   "price": 23.38,
+   "url": "https://knooz-store.com/products/قلم-وشم-جل-إكستريم-جوز-رقم-2",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-9002240001343",
+   "store": "careoutlet",
+   "price": 32.0,
+   "url": "https://care-outlet.com/products/fittydent-aloe-vera-denture-adhesive-cream-40g",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-9002240001343",
+   "store": "knooz",
+   "price": 29.75,
+   "url": "https://knooz-store.com/products/كريم-لاصق-أطقم-الأسنان-بالصبار-مقاوم-للماء-خالي-من-الزنك-من-فيتي-دينت-40-جرام",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-6287014571786",
+   "store": "careoutlet",
+   "price": 48.3,
+   "url": "https://care-outlet.com/products/لوكا-كريم-أساس-سكين-فائق-الخفة-بلون-كريم-بروليه-دافئ-متوسط-07",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-6287014571786",
+   "store": "knooz",
+   "price": 45.17,
+   "url": "https://knooz-store.com/products/لوكا-كريم-أساس-سكين-فائق-الخفة-بلون-كريم-بروليه-دافئ-متوسط-07",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-4006000255576",
+   "store": "careoutlet",
+   "price": 16.1,
+   "url": "https://care-outlet.com/products/نيفيا-سيروم-الجسم-10-سوبر-يوث-تفتيح-اضافي-170-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-4006000255576",
+   "store": "knooz",
+   "price": 19.0,
+   "url": "https://knooz-store.com/products/سيروم-الجسم-نيفيا-10-سوبر-يوث-إكسترا-برايت-170-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-4006000255606",
+   "store": "careoutlet",
+   "price": 16.1,
+   "url": "https://care-outlet.com/products/نيفيا-سيروم-جسم-10-سوبر-جلو-تفتيح-اضافي-170-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-4006000255606",
+   "store": "knooz",
+   "price": 19.0,
+   "url": "https://knooz-store.com/products/سيروم-الجسم-نيفيا-10-سوبر-جلو-إكسترا-برايت-170-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8690604518708",
+   "store": "careoutlet",
+   "price": 29.9,
+   "url": "https://care-outlet.com/products/فلورمار-احمر-شفاه-مطفي-إتش-دي-موكا-15",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8690604518708",
+   "store": "knooz",
+   "price": 33.0,
+   "url": "https://knooz-store.com/products/فلورمار-احمر-شفاه-مطفي-إتش-دي-موكا-15",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8006530157544",
+   "store": "careoutlet",
+   "price": 18.4,
+   "url": "https://care-outlet.com/products/pantene-pro-v-moisture-renewal-shampoo-500ml",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-8006530157544",
+   "store": "knooz",
+   "price": 15.25,
+   "url": "https://knooz-store.com/products/شامبو-شعر-عناية-مرطبة-يرطب-الشعر-الاشد-جفافا-برو-في-من-بانتين-500مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-1280023040019",
+   "store": "careoutlet",
+   "price": 29.9,
+   "url": "https://care-outlet.com/products/hearts-waterproof-eyebrow-pencil-brown-02",
+   "in_stock": true
+  },
+  {
+   "product_id": "p-1280023040019",
+   "store": "knooz",
+   "price": 22.75,
+   "url": "https://knooz-store.com/products/هارتس-قلم-محدد-الحواجب-السائل-بني-غامق-02",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-concealer-number-07-ch2307",
+   "store": "christine",
+   "price": 24.0,
+   "url": "https://christine.com.sa/en/christine-full-coverage-concealer-no-07/p1764640099",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-concealer-number-07-ch2307",
+   "store": "knooz",
+   "price": 22.5,
+   "url": "https://knooz-store.com/products/كونسيلر-خافي-العيوب-تغطية-كاملة-من-كرستين-ch2307-رقم-07",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-loreal-red-glass-oil-for-colored-hair-100-ml",
+   "store": "daralamirat",
+   "price": 54.26,
+   "url": "https://daralamirat.com.sa/en/loreal-elvive-extraordinary-oil-colored-hair-100ml/p69183809",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-loreal-red-glass-oil-for-colored-hair-100-ml",
+   "store": "vaneer",
+   "price": 55.23,
+   "url": "https://vaneersa.com/en/loreal-red-glass-oil-for-colored-hair-100-ml/p1591683025",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-repairing-rebuilding-shampoo-400ml",
+   "store": "daralamirat",
+   "price": 11.17,
+   "url": "https://daralamirat.com.sa/en/sunsilk-repair-and-rebuild-damaged-hair-shampoo-400ml/p869155423",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-repairing-rebuilding-shampoo-400ml",
+   "store": "knooz",
+   "price": 11.5,
+   "url": "https://knooz-store.com/products/شامبو-تجديد-فوري-للشعر-التالف-من-صانسيلك-400مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-shampoo-for-strength-and-shine-hair-400ml",
+   "store": "daralamirat",
+   "price": 11.17,
+   "url": "https://daralamirat.com.sa/en/sunsilk-strength-and-shine-shampoo-400ml-dar-al-amirat/p1426123940",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-shampoo-for-strength-and-shine-hair-400ml",
+   "store": "knooz",
+   "price": 11.5,
+   "url": "https://knooz-store.com/products/شامبو-صانسيلك-لمعان-وقوة-400-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-soft-smooth-shampoo-400ml",
+   "store": "daralamirat",
+   "price": 11.17,
+   "url": "https://daralamirat.com.sa/en/sunsilk-smooth-silky-hair-shampoo-400ml/p1117211047",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-soft-smooth-shampoo-400ml",
+   "store": "knooz",
+   "price": 11.5,
+   "url": "https://knooz-store.com/products/صانسيلك-شامبو-شعر-ناعم-و-انسيابي-400-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-black-shine-shampoo-400ml",
+   "store": "daralamirat",
+   "price": 11.17,
+   "url": "https://daralamirat.com.sa/en/sunsilk-black-hair-shine-shampoo-400ml/p168605091",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-black-shine-shampoo-400ml",
+   "store": "knooz",
+   "price": 11.5,
+   "url": "https://knooz-store.com/products/صانسيلك-شامبو-لمعان-ساحر-للشعرالأسود-400-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-shampoo-hair-fall-solution-400ml",
+   "store": "daralamirat",
+   "price": 11.17,
+   "url": "https://daralamirat.com.sa/en/sunsilk-hair-fall-solution-shampoo-400ml/p1568158127",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-sunsilk-shampoo-hair-fall-solution-400ml",
+   "store": "knooz",
+   "price": 11.5,
+   "url": "https://knooz-store.com/products/صانسيلك-شامبو-الحل-لمشكله-تساقط-الشعر-400-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-alpha-parf-keratin-therapy-deep-cleansing-shampoo-250ml",
+   "store": "daralamirat",
+   "price": 33.21,
+   "url": "https://daralamirat.com.sa/en/Alpha-Parf-Keratin-Thirabi-Shampoo-deep-cleaning-250-ml/p596431311",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-alpha-parf-keratin-therapy-deep-cleansing-shampoo-250ml",
+   "store": "knooz",
+   "price": 39.0,
+   "url": "https://knooz-store.com/products/شامبو-كيراتين-ثيرابي-ليس-ديزاين-لإصلاح-الشعر-من-الفابارف-250مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-bio-oil-scar-stretch-mark-treatment-oil-60ml",
+   "store": "daralamirat",
+   "price": 40.2,
+   "url": "https://daralamirat.com.sa/en/Pio-Oil-Oil-to-treat-scars-and-stretch-marks---60-ml/p183049332",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-bio-oil-scar-stretch-mark-treatment-oil-60ml",
+   "store": "knooz",
+   "price": 37.5,
+   "url": "https://knooz-store.com/products/زيت-العناية-بالبشرة-من-بيو-أويل-60-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-bio-oil-scar-stretch-mark-treatment-oil-200ml",
+   "store": "daralamirat",
+   "price": 93.5,
+   "url": "https://daralamirat.com.sa/en/Pio-Oil-Oil-to-treat-scars-and-stretch-marks---200-ml/p915626614",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-bio-oil-scar-stretch-mark-treatment-oil-200ml",
+   "store": "knooz",
+   "price": 84.25,
+   "url": "https://knooz-store.com/products/زيت-العناية-بالبشرة-من-بيو-أويل-200-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-johnson-s-body-wash-vita-rich-with-papaya-extract-250-ml",
+   "store": "innova",
+   "price": 21.88,
+   "url": "https://innovapharmacy.com/en/johnson-vita-rich-smoothing-body-wash-with-papaya-extract-250-ml",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-johnson-s-body-wash-vita-rich-with-papaya-extract-250-ml",
+   "store": "vaneer",
+   "price": 14.7,
+   "url": "https://vaneersa.com/en/Johnson-liquid-soap-to-shower/p1806265093",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-bepanthen-moisturizing-cream-100-g",
+   "store": "innova",
+   "price": 74.98,
+   "url": "https://innovapharmacy.com/en/bepanthen-moisturizing-cream-100-g",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-bepanthen-moisturizing-cream-100-g",
+   "store": "vaneer",
+   "price": 63.25,
+   "url": "https://vaneersa.com/en/Bepanthen-Moisturizing-Cream-100gm/p1235966455",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-bepanthen-moisturizing-cream-30-g",
+   "store": "innova",
+   "price": 28.98,
+   "url": "https://innovapharmacy.com/en/bepanthen-moisturizing-cream-30-g",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-bepanthen-moisturizing-cream-30-g",
+   "store": "vaneer",
+   "price": 24.51,
+   "url": "https://vaneersa.com/en/Bepanthen-moisturizing-cream-for-the-skin/p889075478",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-dove-nourishing-oil-shampoo-400ml",
+   "store": "innova",
+   "price": 25.9,
+   "url": "https://innovapharmacy.com/en/dove-nourishing-oil-care-shampoo-400-ml",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-dove-nourishing-oil-shampoo-400ml",
+   "store": "whites",
+   "price": 24.79,
+   "url": "https://www.whites.sa/en-sa/dove-nourishing-oil-shampoo-400ml/",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-dove-strengthening-ritual-shampoo-400-ml",
+   "store": "innova",
+   "price": 27.74,
+   "url": "https://innovapharmacy.com/en/dove-strengthening-ritual-shampoo-400-ml",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-dove-strengthening-ritual-shampoo-400-ml",
+   "store": "whites",
+   "price": 27.86,
+   "url": "https://www.whites.sa/en-sa/dove-strengthening-ritual-shampoo-400ml/",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-nivea-highly-effective-intensive-moisturizing-cream-leaves-skin-soft-a",
+   "store": "knooz",
+   "price": 7.0,
+   "url": "https://knooz-store.com/products/كريم-نيفيا-المرطب-الناعم-والمنعش-50-مل",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-nivea-highly-effective-intensive-moisturizing-cream-leaves-skin-soft-a",
+   "store": "vaneer",
+   "price": 7.51,
+   "url": "https://vaneersa.com/en/Nivea-highly-effective-intensive-moisturizing-cream-leaves-skin-soft-and-smooth-50ml/p1384317571",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-beesline-hajj-and-umrah-group",
+   "store": "knooz",
+   "price": 30.0,
+   "url": "https://knooz-store.com/products/مجموعة-الحج-والعمرة-الخالية-من-العطر-من-بيزلين",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-beesline-hajj-and-umrah-group",
+   "store": "vaneer",
+   "price": 35.36,
+   "url": "https://vaneersa.com/en/beesline-hajj-umrah-set/p1165980847",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-crest-toothpaste-3d-white-deluxe-2-pcs-25-off-75-ml",
+   "store": "nahdi",
+   "price": 35.94,
+   "url": "https://www.nahdionline.com/en-sa/crest-toothpaste-3d-white-deluxe-2-pcs-25-off-75-ml/pdp/101122980",
+   "in_stock": true
+  },
+  {
+   "product_id": "pp-crest-toothpaste-3d-white-deluxe-2-pcs-25-off-75-ml",
+   "store": "whites",
+   "price": 50.92,
+   "url": "https://www.whites.sa/en-sa/crest-toothpaste-3d-white-deluxe-2-pcs-25-off-75-ml/",
+   "in_stock": true
+  }
+ ]
+}

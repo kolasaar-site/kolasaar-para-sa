@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% from "macros.html" import card, crumbs, faq as faqs, badge, bico with context %}
+{% block head_extra %}{% if p.image %}{% if '/static/img/' not in p.image %}<link rel="preconnect" href="https://{{ p.image.split('/')[2] }}">{% endif %}<link rel="preload" as="image" href="{{ p.image }}" fetchpriority="high" referrerpolicy="no-referrer">{% endif %}{% endblock %}
+{% block content %}
+{{ crumbs([(t.home, '/' ~ lang ~ '/'), (cat.name[lang], '/' ~ lang ~ '/' ~ cat.slug ~ '/'), (p.name[lang], paths[lang])]) }}
+{% set top = (p.offers | map(attribute='price') | max) %}
+<div class="pdp">
+  <div class="photo">{% if p.image %}<img src="{{ p.image }}" alt="{{ p.name[lang] }}" width="300" height="300" fetchpriority="high" decoding="async" referrerpolicy="no-referrer" onerror="this.onerror=null;this.removeAttribute('src');this.alt='';this.parentNode.classList.add('noimg')">{% endif %}</div>
+  <div class="panel">
+    <span class="muted">{{ bico(p.brand) }}{{ p.brand }}</span>
+    <h1>{{ p.name[lang] }}</h1>
+    <span class="sticker big">{{ money(p.best.price, lang) }}</span>
+    <span class="muted">{{ t.lowest }} {{ t.at }} {{ p.best.store_name }} · {{ t.updated }} <time datetime="{{ updated_iso }}">{{ updated }}</time></span>
+    <a class="btn" href="{{ p.best.link }}" rel="sponsored nofollow noopener" target="_blank">{{ t.go_store }}</a>
+  </div>
+</div>
+
+<p class="summary">{{ summary }}</p>
+
+<section class="advice">
+<h2>{{ 'الخلاصة: هل يستحق الشراء؟' if lang == 'ar' else 'Quick verdict: is it worth buying?' }}</h2>
+<p>{{ adv.verdict }}</p>
+{% if adv.pros or adv.cons %}<div class="proscons">
+{% if adv.pros %}<div class="pc pros"><h3>{{ 'ما يميّزه' if lang == 'ar' else 'What it has going for it' }}</h3><ul>{% for x in adv.pros %}<li>{{ x }}</li>{% endfor %}</ul></div>{% endif %}
+{% if adv.cons %}<div class="pc cons"><h3>{{ 'ما يجب الانتباه إليه' if lang == 'ar' else 'What to watch out for' }}</h3><ul>{% for x in adv.cons %}<li>{{ x }}</li>{% endfor %}</ul></div>{% endif %}
+</div>{% endif %}
+{% if adv.good or adv.notgood %}<div class="proscons">
+{% if adv.good %}<div class="pc pros"><h3>{{ 'مناسب لـ' if lang == 'ar' else 'Good for' }}</h3><ul>{% for x in adv.good %}<li>{{ x }}</li>{% endfor %}</ul></div>{% endif %}
+{% if adv.notgood %}<div class="pc cons"><h3>{{ 'غير مناسب لـ' if lang == 'ar' else 'Not ideal for' }}</h3><ul>{% for x in adv.notgood %}<li>{{ x }}</li>{% endfor %}</ul></div>{% endif %}
+</div>{% endif %}
+{% if guide %}<p><a href="{{ cat.href[lang] }}#guide">{{ ('اقرأ ' + guide.title) if lang == 'ar' else ('Read: ' + guide.title) }}</a></p>{% endif %}
+<p class="muted note">{{ 'هذا التحليل آلي ويعتمد على مواصفات المنتج وأسعار المتاجر ومخزونها وتاريخ السعر، وعلى خصائص هذا النوع من الأجهزة. نحن لا نختبر الأجهزة بأنفسنا.' if lang == 'ar' else 'This analysis is automated: it uses the product specs, store prices, stock and price history, plus known traits of this type of product. We do not lab-test devices ourselves.' }}</p>
+</section>
+
+<h2>{{ t.best_price }}</h2>
+<p class="muted note">{{ "قد تختلف الأسعار بحسب النسخة (محلية أو دولية) والضمان وما يتضمنه العرض؛ راجع تفاصيل المنتج في صفحة المتجر قبل الشراء." if lang == "ar" else "Prices can differ by version (local or international), warranty and what the offer includes; check the product details on the store page before buying." }}</p>
+<div class="rank">
+  {% for o in p.offers %}
+  <div class="row {{ 'low' if loop.first else '' }} {{ '' if o.in_stock else 'out' }}">
+    <span class="store">{{ badge(o) }}{{ o.store_name }}</span>
+    <span class="bar" aria-hidden="true"><b style="width:{{ (o.price / top * 100) | round | int }}%"></b></span>
+    <span class="amount">{{ money(o.price, lang) }}<small>{% if not o.in_stock %}{{ t.out_stock }}{% elif loop.first %}{{ t.cheapest_store }}{% else %}+{{ money(o.price - p.best.price, lang) }}{% endif %}</small></span>
+    <a class="go" href="{{ o.link }}" rel="sponsored nofollow noopener" target="_blank">{{ t.go_store }}</a>
+  </div>
+  {% endfor %}
+</div>
+
+{% if spark %}<h2>{{ t.history }}</h2>
+<div class="chart">{{ spark }}</div>
+<p class="muted">{{ t.low30 }}: {{ money(p.low30, lang) }} · {{ t.high30 }}: {{ money(p.high30, lang) }}</p>
+{% endif %}
+
+{% if specs %}<h2>{{ t.specs }}</h2>
+<div class="tablewrap"><table><tbody>{% for k, v in specs %}<tr><th scope="row">{{ k }}</th><td>{{ v }}</td></tr>{% endfor %}</tbody></table></div>
+{% endif %}
+
+<h2>{{ t.faq }}</h2>
+{{ faqs(faq) }}
+
+{% if p.compare %}<h2>{{ t.compare_with }}</h2>
+<ul class="links">{% for other, href in p.compare %}<li><a href="{{ href[lang] }}">{{ p.name[lang] }} {{ t.vs }} {{ other.name[lang] }}</a></li>{% endfor %}</ul>{% endif %}
+
+{% if more_links %}<p class="morelinks">{% for label, url in more_links %}<a href="{{ url }}">{{ label }}</a>{% if not loop.last %} · {% endif %}{% endfor %}</p>{% endif %}
+
+{% if related %}<h2>{{ t.related }}</h2>
+<div class="list">{% for r in related %}{{ card(r, lang, t) }}{% endfor %}</div>{% endif %}
+{% endblock %}

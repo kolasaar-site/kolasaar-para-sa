@@ -1,0 +1,501 @@
+[
+ {
+  "id": "pp-eucerin-lip-active-4-8-g",
+  "slug": "pp-eucerin-lip-active-4-8-g",
+  "category": "visage",
+  "brand": "Eucerin",
+  "name": {
+   "en": "Eucerin Lip Active 4.8 g",
+   "ar": "Eucerin Lip Active 4.8 g"
+  },
+  "image": "https://cdn.shopify.com/s/files/1/0700/5038/1902/files/4005800631702.png?v=1792527762",
+  "specs": {}
+ },
+ {
+  "id": "pp-cantu-avocado-hydrating-curl-activator-355-ml",
+  "slug": "pp-cantu-avocado-hydrating-curl-activator-355-ml",
+  "category": "other",
+  "brand": "Cantu",
+  "name": {
+   "en": "Cantu Avocado Hydrating Curl Activator 355 ML",
+   "ar": "Cantu Avocado Hydrating Curl Activator 355 ML"
+  },
+  "image": "https://cdn.shopify.com/s/files/1/0700/5038/1902/files/817513019913.jpg?v=1789151447",
+  "specs": {}
+ },
+ {
+  "id": "pp-cantu-shea-butter-coconut-oil-shine-hold-mist-237ml",
+  "slug": "pp-cantu-shea-butter-coconut-oil-shine-hold-mist-237ml",
+  "category": "corps",
+  "brand": "Cantu",
+  "name": {
+   "en": "Cantu Shea Butter Coconut Oil Shine & Hold Mist - 237ml",
+   "ar": "Cantu Shea Butter Coconut Oil Shine & Hold Mist - 237ml"
+  },
+  "image": "https://cdn.shopify.com/s/files/1/0700/5038/1902/files/cantu-hair-styling-237ml-cantu-hair-spray-shea-butter-and-coconut-oil-for-shine-and-hair-hold-237ml-817513010064-33816929796174.jpg?v=1770655072",
+  "specs": {}
+ },
+ {
+  "id": "pp-johnson-johnson-baby-oil-gel-fresh-blossom-200-ml",
+  "slug": "pp-johnson-johnson-baby-oil-gel-fresh-blossom-200-ml",
+  "category": "bebe",
+  "brand": "Johnson's",
+  "name": {
+   "en": "Johnson & Johnson Baby Oil Gel Fresh Blossom 200 Ml",
+   "ar": "Johnson & Johnson Baby Oil Gel Fresh Blossom 200 Ml"
+  },
+  "image": "https://cdn.shopify.com/s/files/1/0700/5038/1902/files/3574661665795.png?v=1791836337",
+  "specs": {}
+ },
+ {
+  "id": "pp-sensodyne-repair-protect-toothpaste-75ml",
+  "slug": "pp-sensodyne-repair-protect-toothpaste-75ml",
+  "category": "hygiene",
+  "brand": "Sensodyne",
+  "name": {
+   "en": "Sensodyne Repair & Protect Toothpaste 75ml",
+   "ar": "Sensodyne Repair & Protect Toothpaste 75ml"
+  },
+  "image": "https://cdn.shopify.com/s/files/1/0700/5038/1902/files/SensodyneRepair_Protect.jpg?v=1775412171",
+  "specs": {},
+  "gtin": "6805699953613"
+ },
+ {
+  "id": "p-3499320011914",
+  "slug": "p-3499320011914",
+  "category": "visage",
+  "brand": "السعودية للعناية",
+  "name": {
+   "en": "كريم سيتافيل المرطب، 453 غرام",
+   "ar": "كريم سيتافيل المرطب، 453 غرام"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/b22822cb-2cd9-4cc8-935b-04c2c8ce4716.webp",
+  "specs": {},
+  "gtin": "3499320011914"
+ },
+ {
+  "id": "p-3499320011884",
+  "slug": "p-3499320011884",
+  "category": "visage",
+  "brand": "السعودية للعناية",
+  "name": {
+   "en": "كريم مرطب من سيتافيل - 250غ",
+   "ar": "كريم مرطب من سيتافيل - 250غ"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/4df85046-6e79-4585-9673-6e9576b41bee.png",
+  "specs": {},
+  "gtin": "3499320011884"
+ },
+ {
+  "id": "pp-qv-moisturizing-skin-cream-compress-500-ml",
+  "slug": "pp-qv-moisturizing-skin-cream-compress-500-ml",
+  "category": "visage",
+  "brand": "Qv",
+  "name": {
+   "en": "QV moisturizing skin cream compress 500 ml",
+   "ar": "كيوفي كريم 500 جرام اعيدي الحيوية لبشرتك"
+  },
+  "image": "https://cdn.salla.sa/nGgdb/39f10286-bb60-4ae3-9fd4-307baa6af696-1000x1000-1McdeE9gptzX1FykecgqSHQBdGPr0BS1PNBlbB95.jpg",
+  "specs": {},
+  "gtin": "9314839012952"
+ },
+ {
+  "id": "p-8809647392583",
+  "slug": "p-8809647392583",
+  "category": "visage",
+  "brand": "السعودية للعناية",
+  "name": {
+   "en": "سوم باي مي كريم حول العين – 30مل ريتينول المركز",
+   "ar": "سوم باي مي كريم حول العين – 30مل ريتينول المركز"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/93dd742b-2813-4a9d-8984-d866571c8872.webp",
+  "specs": {},
+  "gtin": "8809647392583"
+ },
+ {
+  "id": "pp-vaseline-jelly-original-care-450ml",
+  "slug": "pp-vaseline-jelly-original-care-450ml",
+  "category": "visage",
+  "brand": "Vaseline",
+  "name": {
+   "en": "Vaseline - Jelly Original Care 450ml",
+   "ar": "فازلين بتروليوم جلي الأصلي 450مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/14072573-445c-436d-94d5-8f4d58cadb64/e757b478-a1ef-442e-9ac0-e27ce4c337e4.png",
+  "specs": {},
+  "gtin": "6281006408869"
+ },
+ {
+  "id": "p-4000196901415",
+  "slug": "p-4000196901415",
+  "category": "visage",
+  "brand": "السعودية للعناية",
+  "name": {
+   "en": "جليسوليد كريم 400مل",
+   "ar": "جليسوليد كريم 400مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/b4516a85-b236-4dd6-bd91-40192ed250ae.webp",
+  "specs": {},
+  "gtin": "4000196901415"
+ },
+ {
+  "id": "pp-garnier-micellar-cleanser-for-sensitive-skin-400-ml",
+  "slug": "pp-garnier-micellar-cleanser-for-sensitive-skin-400-ml",
+  "category": "maquillage",
+  "brand": "Garnier",
+  "name": {
+   "en": "Garnier Micellar Cleanser for Sensitive Skin - 400 ml",
+   "ar": "غارنييه ماء ميسلار مزيل مكياج 400مل سكن ايكتيف للبشره الحساسه"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/14072573-445c-436d-94d5-8f4d58cadb64/2c7fafd0-2946-4456-8621-ba583303bd47.png",
+  "specs": {},
+  "gtin": "3600541729711"
+ },
+ {
+  "id": "p-8682536051316",
+  "slug": "p-8682536051316",
+  "category": "maquillage",
+  "brand": "Flormar",
+  "name": {
+   "en": "فلورمار بودرة مضغوطة - 091 Medium Cream Rose",
+   "ar": "فلورمار بودرة مضغوطة - 091 Medium Cream Rose"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/94b3795f-cab4-45c4-98b3-c16203b607b5.webp",
+  "specs": {},
+  "gtin": "8682536051316"
+ },
+ {
+  "id": "p-8682536028844",
+  "slug": "p-8682536028844",
+  "category": "visage",
+  "brand": "Flormar",
+  "name": {
+   "en": "قلم وشم جل إكستريم جوز رقم 2",
+   "ar": "قلم وشم جل إكستريم جوز رقم 2"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/f573f5bd-571a-40a1-9406-82dbe6db921a.jpg",
+  "specs": {},
+  "gtin": "8682536028844"
+ },
+ {
+  "id": "p-9002240001343",
+  "slug": "p-9002240001343",
+  "category": "hygiene",
+  "brand": "كنوز العناية",
+  "name": {
+   "en": "فيتي دينت كريم لاصق أطقم الأسنان بالصبار مقاوم للماء خالي من الزنك - 40 جرام",
+   "ar": "فيتي دينت كريم لاصق أطقم الأسنان بالصبار مقاوم للماء خالي من الزنك - 40 جرام"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/fede26fe-67f2-4a07-997a-ee39f857504c.webp",
+  "specs": {},
+  "gtin": "9002240001343"
+ },
+ {
+  "id": "p-6287014571786",
+  "slug": "p-6287014571786",
+  "category": "maquillage",
+  "brand": "Loca",
+  "name": {
+   "en": "لوكا كريم أساس سكين فائق الخفة بلون كريم بروليه دافئ متوسط 07",
+   "ar": "لوكا كريم أساس سكين فائق الخفة بلون كريم بروليه دافئ متوسط 07"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/ad3d598d-e484-440c-a2f0-e0e95dd6f02c.webp",
+  "specs": {},
+  "gtin": "6287014571786"
+ },
+ {
+  "id": "p-4006000255576",
+  "slug": "p-4006000255576",
+  "category": "corps",
+  "brand": "Nivea",
+  "name": {
+   "en": "نيفيا سيروم الجسم 10 سوبر يوث تفتيح اضافي - 170 مل",
+   "ar": "نيفيا سيروم الجسم 10 سوبر يوث تفتيح اضافي - 170 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/b088ce5a-9a7d-4a69-81e8-344f169eda85.webp",
+  "specs": {},
+  "gtin": "4006000255576"
+ },
+ {
+  "id": "p-4006000255606",
+  "slug": "p-4006000255606",
+  "category": "visage",
+  "brand": "Nivea",
+  "name": {
+   "en": "نيفيا سيروم جسم 10 سوبر جلو تفتيح اضافي - 170 مل",
+   "ar": "نيفيا سيروم جسم 10 سوبر جلو تفتيح اضافي - 170 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/79c99c07-910f-4811-895e-316192432dac.webp",
+  "specs": {},
+  "gtin": "4006000255606"
+ },
+ {
+  "id": "p-8690604518708",
+  "slug": "p-8690604518708",
+  "category": "maquillage",
+  "brand": "Flormar",
+  "name": {
+   "en": "فلورمار احمر شفاه مطفي إتش دي موكا - 15",
+   "ar": "فلورمار احمر شفاه مطفي إتش دي موكا - 15"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/b811c568-b202-481a-a6c8-baf418a2f68c.webp",
+  "specs": {},
+  "gtin": "8690604518708"
+ },
+ {
+  "id": "p-8006530157544",
+  "slug": "p-8006530157544",
+  "category": "cheveux",
+  "brand": "Pantene",
+  "name": {
+   "en": "بانتين شامبو شعر عناية مرطبة -500 مل",
+   "ar": "بانتين شامبو شعر عناية مرطبة -500 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/e1bcb32f-8e7f-42be-b3c4-4f3b8ba83493.webp",
+  "specs": {},
+  "gtin": "8006530157544"
+ },
+ {
+  "id": "p-1280023040019",
+  "slug": "p-1280023040019",
+  "category": "maquillage",
+  "brand": "Hearts",
+  "name": {
+   "en": "هارتس قلم حواجب مقاوم للماء بني 02",
+   "ar": "هارتس قلم حواجب مقاوم للماء بني 02"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/6f04d36d-5320-41cf-a713-06df3742d22a.webp",
+  "specs": {},
+  "gtin": "1280023040019"
+ },
+ {
+  "id": "pp-concealer-number-07-ch2307",
+  "slug": "pp-concealer-number-07-ch2307",
+  "category": "maquillage",
+  "brand": "كنوز العناية",
+  "name": {
+   "en": "Concealer | Number 07- CH2307",
+   "ar": "كونسيلر خافي العيوب تغطية كاملة من كرستين - Ch2307 | رقم 07"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/ec945ca2-b116-43a4-a46c-af405aec7d37.webp",
+  "specs": {},
+  "gtin": "6974482592237"
+ },
+ {
+  "id": "pp-loreal-red-glass-oil-for-colored-hair-100-ml",
+  "slug": "pp-loreal-red-glass-oil-for-colored-hair-100-ml",
+  "category": "cheveux",
+  "brand": "Loreal Paris",
+  "name": {
+   "en": "Loreal red glass oil for colored hair 100 ml",
+   "ar": "Loreal red glass oil for colored hair 100 ml"
+  },
+  "image": "https://cdn.salla.sa/nGgdb/cad50fa7-d4fa-437f-885d-b59425208f0e-1000x1000-6egfbGIN0wDHLocsDHZidckntNodagpSDY1l4c3c.png",
+  "specs": {},
+  "gtin": "3600522263609"
+ },
+ {
+  "id": "pp-sunsilk-repairing-rebuilding-shampoo-400ml",
+  "slug": "pp-sunsilk-repairing-rebuilding-shampoo-400ml",
+  "category": "cheveux",
+  "brand": "Sunsilk",
+  "name": {
+   "en": "Sunsilk Repairing & Rebuilding Shampoo - 400ml",
+   "ar": "شامبو تجديد فوري للشعر التالف من صانسيلك 400مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/3121d1b1-5ccd-475c-86fa-3afa03077ff0.webp",
+  "specs": {},
+  "gtin": "6281006424326"
+ },
+ {
+  "id": "pp-sunsilk-shampoo-for-strength-and-shine-hair-400ml",
+  "slug": "pp-sunsilk-shampoo-for-strength-and-shine-hair-400ml",
+  "category": "cheveux",
+  "brand": "Sunsilk",
+  "name": {
+   "en": "Sunsilk Shampoo for Strength and Shine Hair 400ml",
+   "ar": "شامبو صانسيلك لمعان وقوة - 400 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/39b87cf8-2041-42a4-a456-88b2beb2fb5d.webp",
+  "specs": {},
+  "gtin": "6281006424388"
+ },
+ {
+  "id": "pp-sunsilk-soft-smooth-shampoo-400ml",
+  "slug": "pp-sunsilk-soft-smooth-shampoo-400ml",
+  "category": "cheveux",
+  "brand": "Sunsilk",
+  "name": {
+   "en": "Sunsilk Soft & Smooth Shampoo 400ml",
+   "ar": "صانسيلك شامبو شعر ناعم و انسيابي 400 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/20694ede-fe24-4004-b253-75521158a329.webp",
+  "specs": {},
+  "gtin": "6281006424449"
+ },
+ {
+  "id": "pp-sunsilk-black-shine-shampoo-400ml",
+  "slug": "pp-sunsilk-black-shine-shampoo-400ml",
+  "category": "cheveux",
+  "brand": "Sunsilk",
+  "name": {
+   "en": "Sunsilk Black Shine Shampoo 400ml",
+   "ar": "صانسيلك شامبو لمعان ساحر للشعرالأسود 400 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/0265c8c2-8106-40fe-aaeb-abdd01a815b0.webp",
+  "specs": {},
+  "gtin": "6281006424562"
+ },
+ {
+  "id": "pp-sunsilk-shampoo-hair-fall-solution-400ml",
+  "slug": "pp-sunsilk-shampoo-hair-fall-solution-400ml",
+  "category": "cheveux",
+  "brand": "Sunsilk",
+  "name": {
+   "en": "Sunsilk Shampoo Hair Fall Solution 400ml",
+   "ar": "صانسيلك شامبو الحل لمشكله تساقط الشعر 400 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/ebfbef00-2f03-42f5-92c5-1e51a449b262.jpg",
+  "specs": {},
+  "gtin": "6281006424623"
+ },
+ {
+  "id": "pp-alpha-parf-keratin-therapy-deep-cleansing-shampoo-250ml",
+  "slug": "pp-alpha-parf-keratin-therapy-deep-cleansing-shampoo-250ml",
+  "category": "cheveux",
+  "brand": "كنوز العناية",
+  "name": {
+   "en": "Alpha Parf Keratin Therapy Deep Cleansing Shampoo 250ml",
+   "ar": "شامبو كيراتين ثيرابي ليس ديزاين لإصلاح الشعر من الفابارف 250مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/90ad323d-0637-4f44-b6f5-e5b8dc747cd1.webp",
+  "specs": {},
+  "gtin": "8022297067483"
+ },
+ {
+  "id": "pp-bio-oil-scar-stretch-mark-treatment-oil-60ml",
+  "slug": "pp-bio-oil-scar-stretch-mark-treatment-oil-60ml",
+  "category": "corps",
+  "brand": "Bio-Oil",
+  "name": {
+   "en": "Bio-Oil Scar & Stretch Mark Treatment Oil - 60ml",
+   "ar": "زيت العناية بالبشرة من بيو أويل - 60 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/a5dfd982-486a-48fa-afdb-9bfb130058f0.jpg",
+  "specs": {},
+  "gtin": "6001159113126"
+ },
+ {
+  "id": "pp-bio-oil-scar-stretch-mark-treatment-oil-200ml",
+  "slug": "pp-bio-oil-scar-stretch-mark-treatment-oil-200ml",
+  "category": "corps",
+  "brand": "Bio-Oil",
+  "name": {
+   "en": "Bio-Oil Scar & Stretch Mark Treatment Oil - 200ml",
+   "ar": "زيت العناية بالبشرة من بيو أويل - 200 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/713218c6-0adc-4ab5-abb8-acff1569f259.jpg",
+  "specs": {},
+  "gtin": "6001159113140"
+ },
+ {
+  "id": "pp-johnson-s-body-wash-vita-rich-with-papaya-extract-250-ml",
+  "slug": "pp-johnson-s-body-wash-vita-rich-with-papaya-extract-250-ml",
+  "category": "hygiene",
+  "brand": "Johnson",
+  "name": {
+   "en": "Johnson's Body Wash Vita-Rich with Papaya Extract 250 ml",
+   "ar": "Johnson's Body Wash Vita-Rich with Papaya Extract 250 ml"
+  },
+  "image": "https://img.innovapharmacy.com/media/catalog/product/1/0/1000359_1.jpg",
+  "specs": {}
+ },
+ {
+  "id": "pp-bepanthen-moisturizing-cream-100-g",
+  "slug": "pp-bepanthen-moisturizing-cream-100-g",
+  "category": "visage",
+  "brand": "Bepanthen",
+  "name": {
+   "en": "Bepanthen Moisturizing Cream 100 G",
+   "ar": "Bepanthen Moisturizing Cream 100 G"
+  },
+  "image": "https://img.innovapharmacy.com/media/catalog/product/2/0/2033528-2_1.jpg",
+  "specs": {},
+  "gtin": "6285074002981"
+ },
+ {
+  "id": "pp-bepanthen-moisturizing-cream-30-g",
+  "slug": "pp-bepanthen-moisturizing-cream-30-g",
+  "category": "visage",
+  "brand": "Bepanthen",
+  "name": {
+   "en": "Bepanthen Moisturizing Cream 30 G",
+   "ar": "Bepanthen Moisturizing Cream 30 G"
+  },
+  "image": "https://img.innovapharmacy.com/media/catalog/product/2/0/2033529-3_1.jpg",
+  "specs": {},
+  "gtin": "6285074002974"
+ },
+ {
+  "id": "pp-dove-nourishing-oil-shampoo-400ml",
+  "slug": "pp-dove-nourishing-oil-shampoo-400ml",
+  "category": "cheveux",
+  "brand": "Dove",
+  "name": {
+   "en": "Dove Nourishing Oil Shampoo 400Ml",
+   "ar": "Dove Nourishing Oil Shampoo 400Ml"
+  },
+  "image": "https://img.innovapharmacy.com/media/catalog/product/1/0/1003124.png",
+  "specs": {}
+ },
+ {
+  "id": "pp-dove-strengthening-ritual-shampoo-400-ml",
+  "slug": "pp-dove-strengthening-ritual-shampoo-400-ml",
+  "category": "cheveux",
+  "brand": "Dove",
+  "name": {
+   "en": "Dove Strengthening Ritual Shampoo 400 ML",
+   "ar": "Dove Strengthening Ritual Shampoo 400 ML"
+  },
+  "image": "https://img.innovapharmacy.com/media/catalog/product/1/0/1003130.png",
+  "specs": {}
+ },
+ {
+  "id": "pp-nivea-highly-effective-intensive-moisturizing-cream-leaves-skin-soft-a",
+  "slug": "pp-nivea-highly-effective-intensive-moisturizing-cream-leaves-skin-soft-a",
+  "category": "visage",
+  "brand": "Nivea",
+  "name": {
+   "en": "Nivea - Highly Effective Intensive Moisturizing Cream Leaves Skin Soft And Supple 50ml",
+   "ar": "كريم نيفيا المرطب الناعم والمنعش - 50 مل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/f5328136-8a33-4741-a995-16f869cb907c.webp",
+  "specs": {},
+  "gtin": "42207269"
+ },
+ {
+  "id": "pp-beesline-hajj-and-umrah-group",
+  "slug": "pp-beesline-hajj-and-umrah-group",
+  "category": "hygiene",
+  "brand": "Beesline",
+  "name": {
+   "en": "Beesline - Hajj and Umrah Group",
+   "ar": "مجموعة الحج والعمرة الخالية من العطر من بيزلين صابون - شامبو - مرهم لترطيب الجلد بشمع النحل"
+  },
+  "image": "https://media.zid.store/cdn-cgi/image/fit=scale-down,width=1000,height=1000/https://media.zid.store/caddf466-1b7a-4155-8a9b-3495ba54d825/b92b5543-cd68-4af1-b77a-f826a6560e8b.jpg",
+  "specs": {},
+  "gtin": "5281018010044"
+ },
+ {
+  "id": "pp-crest-toothpaste-3d-white-deluxe-2-pcs-25-off-75-ml",
+  "slug": "pp-crest-toothpaste-3d-white-deluxe-2-pcs-25-off-75-ml",
+  "category": "hygiene",
+  "brand": "Crest",
+  "name": {
+   "en": "Crest Toothpaste 3D White Deluxe 2 Pcs 25% Off 75 Ml",
+   "ar": "Crest Toothpaste 3D White Deluxe 2 Pcs 25% Off 75 Ml"
+  },
+  "image": "https://cd3c14-whites.akinoncloudcdn.com/products/2026/06/11/23573/d6f91f3b-7818-4053-8e37-ba0f169621e1.jpg",
+  "specs": {}
+ }
+]

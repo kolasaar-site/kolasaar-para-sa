@@ -1,0 +1,5 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ h1 }}</h1>
+{% for heading, text in sections %}<h2>{{ heading }}</h2><p>{{ text }}</p>{% endfor %}
+{% endblock %}

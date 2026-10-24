@@ -1,0 +1,257 @@
+{
+ "site_name": {
+  "ar": "كل الأسعار – تجميل وعناية",
+  "en": "Kolasaar Beauty"
+ },
+ "tagline": {
+  "ar": "مقارنة أسعار التجميل والعناية بالبشرة والشعر والعطور في السعودية بين أشهر المتاجر",
+  "en": "Beauty and personal-care price comparison in Saudi Arabia across leading stores"
+ },
+ "base_url": "https://kolasaar.com/para",
+ "currency": "SAR",
+ "min_price": 1,
+ "demo_mode": false,
+ "contact_email": "info@kolasaar.com",
+ "sources": [
+  "csv"
+ ],
+ "categories": [
+  {
+   "slug": "visage",
+   "ar": "العناية بالبشرة والوجه",
+   "en": "Face care",
+   "intro": {
+    "ar": "قارن أسعار العناية بالبشرة والوجه في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare face care prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "corps",
+   "ar": "العناية بالجسم",
+   "en": "Body care",
+   "intro": {
+    "ar": "قارن أسعار العناية بالجسم في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare body care prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "cheveux",
+   "ar": "العناية بالشعر",
+   "en": "Hair care",
+   "intro": {
+    "ar": "قارن أسعار العناية بالشعر في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare hair care prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "solaire",
+   "ar": "الحماية من الشمس",
+   "en": "Sun care",
+   "intro": {
+    "ar": "قارن أسعار الحماية من الشمس في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare sun care prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "bebe",
+   "ar": "الأم والطفل",
+   "en": "Mother & baby",
+   "intro": {
+    "ar": "قارن أسعار الأم والطفل في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare mother & baby prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "complements",
+   "ar": "المكملات الغذائية والفيتامينات",
+   "en": "Supplements",
+   "intro": {
+    "ar": "قارن أسعار المكملات الغذائية والفيتامينات في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare supplements prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "hygiene",
+   "ar": "النظافة الشخصية والأسنان",
+   "en": "Hygiene",
+   "intro": {
+    "ar": "قارن أسعار النظافة الشخصية والأسنان في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare hygiene prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "maquillage",
+   "ar": "المكياج",
+   "en": "Makeup",
+   "intro": {
+    "ar": "قارن أسعار المكياج في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare makeup prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "parfum",
+   "ar": "العطور",
+   "en": "Fragrance",
+   "intro": {
+    "ar": "قارن أسعار العطور في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare fragrance prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "minceur",
+   "ar": "التنحيف",
+   "en": "Slimming",
+   "intro": {
+    "ar": "قارن أسعار التنحيف في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare slimming prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "materiel",
+   "ar": "المعدات الطبية",
+   "en": "Health devices",
+   "intro": {
+    "ar": "قارن أسعار المعدات الطبية في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare health devices prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  },
+  {
+   "slug": "other",
+   "ar": "منتجات أخرى",
+   "en": "Other",
+   "intro": {
+    "ar": "قارن أسعار منتجات أخرى في السعودية بين أبرز متاجر التجميل والعناية، مع أقل سعر اليوم وحالة التوفر وتاريخ تغيّر السعر.",
+    "en": "Compare other prices in Saudi Arabia across the main beauty and care stores: lowest price today, availability and price history."
+   }
+  }
+ ],
+ "spec_labels": {
+  "visage": {},
+  "corps": {},
+  "cheveux": {},
+  "solaire": {},
+  "bebe": {},
+  "complements": {},
+  "hygiene": {},
+  "maquillage": {},
+  "parfum": {},
+  "minceur": {},
+  "materiel": {},
+  "other": {}
+ },
+ "stores": {
+  "care-outlet": {
+   "name": "Care Outlet",
+   "search_url": "https://care-outlet.com/"
+  },
+  "careoutlet": {
+   "name": "Care Outlet",
+   "search_url": "https://care-outlet.com/"
+  },
+  "watsons": {
+   "name": "Watsons",
+   "search_url": "https://watsons.sa/"
+  },
+  "whites": {
+   "name": "Whites",
+   "search_url": "https://whites.sa/en-sa"
+  },
+  "sidalih": {
+   "name": "Sidalih",
+   "search_url": "https://sidalih.com/"
+  },
+  "avnzor": {
+   "name": "Avnzor",
+   "search_url": "https://avnzor.com/"
+  },
+  "nahdi": {
+   "name": "Nahdi",
+   "search_url": "https://www.nahdionline.com/"
+  },
+  "aldawaa": {
+   "name": "Al-Dawaa",
+   "search_url": "https://www.al-dawaa.com/en"
+  },
+  "innova": {
+   "name": "Innova Pharmacy",
+   "search_url": "https://innovapharmacy.com/en"
+  },
+  "niceone": {
+   "name": "NiceOne",
+   "search_url": "https://niceonesa.com/"
+  },
+  "careksa": {
+   "name": "Care KSA",
+   "search_url": "https://care-ksa.com/"
+  },
+  "knooz": {
+   "name": "Knooz",
+   "search_url": "https://knooz-store.com/"
+  },
+  "daralamirat": {
+   "name": "Dar Al Amirat",
+   "search_url": "https://daralamirat.com.sa/"
+  },
+  "leala": {
+   "name": "Leala Beauty",
+   "search_url": "https://lealabeauty.com/"
+  },
+  "ounass": {
+   "name": "Ounass",
+   "search_url": "https://saudi.ounass.com/"
+  },
+  "vaneer": {
+   "name": "Vaneer",
+   "search_url": "https://vaneersa.com/"
+  },
+  "christine": {
+   "name": "Christine",
+   "search_url": "https://christine.com.sa/"
+  },
+  "carebeauty": {
+   "name": "Care Beauty KSA",
+   "search_url": "https://carebeautyksa.com/"
+  },
+  "kiehls": {
+   "name": "Kiehl's",
+   "search_url": "https://kiehls.sa/ar_SA"
+  },
+  "goldapple": {
+   "name": "Gold Apple",
+   "search_url": "https://goldapple.sa/"
+  },
+  "noon": {
+   "name": "Noon",
+   "search_url": "https://www.noon.com/saudi-ar/"
+  }
+ },
+ "affiliate": {},
+ "ai_crawlers": [
+  "GPTBot",
+  "OAI-SearchBot",
+  "ChatGPT-User",
+  "ClaudeBot",
+  "Claude-SearchBot",
+  "Claude-User",
+  "PerplexityBot",
+  "Perplexity-User",
+  "Google-Extended",
+  "Applebot-Extended",
+  "Bingbot",
+  "CCBot"
+ ],
+ "page_size": 48,
+ "max_compare_per_category": 10,
+ "min_stores": 2,
+ "index_compare": false,
+ "indexnow_key": null,
+ "replace": [],
+ "skip_thin": true,
+ "images_max": 2000,
+ "brand_page_max": 150,
+ "brand_page_min": 3,
+ "thin_viewer": true,
+ "decimals": 2,
+ "currency_ar": "ر.س",
+ "lang2": "para"
+}
