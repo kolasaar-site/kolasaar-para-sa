@@ -1,1 +1,14 @@
 Publishing... 
+[main 616b16e] Update SA data
+ 1 file changed, 7 insertions(+)
+To https://github.com/kolasaar-site/kolasaar-para-sa.git
+   8c62e31..616b16e  main -> main
+branch 'main' set up to track 'origin/main'.
+push exit=0 
+DONE 
+warning: in the working copy of 'post.py', LF will be replaced by CRLF the next time Git touches it
+[main 271581e] Header: country shown once, SA/TN switcher
+ 1 file changed, 1 insertion(+)
+To https://github.com/kolasaar-site/kolasaar-para.git
+   da2e133..271581e  main -> main
+TN push exit=0 
