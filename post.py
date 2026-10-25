@@ -95,6 +95,34 @@ open(OUT + "/_redirects", "w").write(
 open(OUT + "/robots.txt", "w").write(
     "User-agent: *\nAllow: /\n\nSitemap: https://kolasaar.com/para/sa/sitemap.xml\n")
 
+
+# --- staged opening: sa/INDEX_OK lists the sections that are open for indexing (one slug per line; "all" opens everything).
+# Sections not listed stay noindex and are left out of the sitemap until they are added to the file.
+if os.path.exists("sa/INDEX_OK"):
+    ALLC = ["visage", "corps", "hygiene", "maquillage", "cheveux", "parfum", "bebe", "solaire", "brand"]
+    OPEN = {l.strip() for l in open("sa/INDEX_OK", encoding="utf-8") if l.strip() and not l.startswith("#")}
+    CLOSED = [] if "all" in OPEN else [c for c in ALLC if c not in OPEN]
+    if CLOSED:
+        pat = re.compile(r"/para/sa/(?:ar|en)/(?:%s)(?:/|$)" % "|".join(CLOSED))
+        nclosed = 0
+        for root, _, files in os.walk(OUT + "/para/sa"):
+            for f in files:
+                if f.endswith(".html"):
+                    p = os.path.join(root, f)
+                    rel = "/" + os.path.relpath(p, OUT).replace(os.sep, "/")
+                    if pat.search(rel):
+                        s = open(p, encoding="utf-8").read()
+                        s2 = re.sub(r'<meta name="robots"[^>]*>', '<meta name="robots" content="noindex,follow">', s)
+                        if s2 != s:
+                            open(p, "w", encoding="utf-8").write(s2)
+                        nclosed += 1
+        sp = OUT + "/para/sa/sitemap.xml"
+        sm = open(sp, encoding="utf-8").read()
+        kept = [l for l in sm.split("\n") if not (l.strip().startswith("<url>") and pat.search(re.search(r"<loc>([^<]*)</loc>", l).group(1).replace("https://kolasaar.com", "")))]
+        open(sp, "w", encoding="utf-8").write("\n".join(kept))
+        print("staged opening: closed", CLOSED, "pages", nclosed, "sitemap urls", len([l for l in kept if "<url>" in l]))
+    else:
+        print("indexing fully open")
 # --- launch gate: pages stay noindex until the owner verifies the data and creates sa/INDEX_OK
 if not os.path.exists("sa/INDEX_OK"):
     import re as _re
