@@ -317,6 +317,10 @@
     "ar": "الحجم",
     "en": "Size"
    },
+   "shade": {
+    "ar": "درجة اللون",
+    "en": "Shade"
+   },
    "count": {
     "ar": "العدد (قطعة)",
     "en": "Pieces"
@@ -553,5 +557,6 @@
  "thin_viewer": true,
  "decimals": 2,
  "currency_ar": "ر.س",
- "lang2": "para"
+ "lang2": "para",
+ "use_ar_names": true
 }

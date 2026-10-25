@@ -278,7 +278,7 @@ for p in catalog:
         p = dict(p, image=f"{SITE}/static/img/{_k}.webp", thumb=f"{SITE}/static/img/{_k}.webp")
     full_en = p["name"]["en"]
     tidy = tidy_en(full_en)
-    p = dict(p, slug=short_slug(p["slug"]), name_full=p["name"], name={"en": tidy, "ar": tidy_ar(tidy, p["category"])})
+    p = dict(p, slug=short_slug(p["slug"]), name_full=p["name"], name={"en": tidy, "ar": (tidy_en(p["name"]["ar"]) if cfg.get("use_ar_names") and re.search("[\u0600-\u06ff]", p["name"].get("ar", "")) else tidy_ar(tidy, p["category"]))})
     _sn = sum(1 for v in (p.get("specs") or {}).values() if v not in ("-", "", None))
     _is_thin = len(offs) <= 2 and len(series) < 7 and _sn <= 1  # two stores, no history, hardly any specs: nothing a searcher cannot get from the store itself
     items.append(dict(
@@ -818,6 +818,7 @@ def product_summary(p, lang):
         if lang == "ar":
             _bits = [f"{n} " + (f"من فئة {_sv('type', _sp['type'], 'ar')}" if _sp.get("type") else "منتج للعناية")]
             if _sp.get("size"): _bits.append(f"بحجم {_sv('size', _sp['size'], 'ar')}")
+            if _sp.get("shade"): _bits.append(f"بدرجة لون رقم {_sp['shade']}")
             if _sp.get("spf"): _bits.append(f"بعامل حماية {_sp['spf']}")
             if _sp.get("audience"): _bits.append(f"موجّه لفئة {_sv('audience', _sp['audience'], 'ar')}")
             if _sp.get("feature"): _bits.append(f"ومن أبرز ما يميّزه: {_sv('feature', _sp['feature'], 'ar')}")
@@ -825,6 +826,7 @@ def product_summary(p, lang):
         else:
             _bits = [f"{n} is " + (f"a {_sv('type', _sp['type'], 'en').lower()}" if _sp.get("type") else "a care product")]
             if _sp.get("size"): _bits.append(f"sold in a {_sp['size']} size")
+            if _sp.get("shade"): _bits.append(f"in shade {_sp['shade']}")
             if _sp.get("spf"): _bits.append(f"rated {_sp['spf']}")
             if _sp.get("audience"): _bits.append(f"aimed at {_sv('audience', _sp['audience'], 'en').lower()}")
             if _sp.get("feature"): _bits.append(f"with {_sv('feature', _sp['feature'], 'en').lower()} as a key feature")

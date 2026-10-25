@@ -55,8 +55,12 @@ main{max-width:1120px;margin-inline:auto;padding:8px 16px 32px}
   .top .bar{flex-wrap:wrap;padding-block:8px}
   .top .head-search{order:3;flex:1 0 100%;max-width:none}
   .tools{margin-inline-start:auto}
-  .dd summary .lbl{display:none}
-  .dd summary{padding:0 8px}
+  .dd summary{padding:0 8px;gap:5px}
+  .logo b{font-size:.92rem}
+  .logo i{width:24px;height:18px}
+  .dd summary{min-width:0}
+  .tools{gap:4px}
+  .logo{gap:8px}
 }
 
 /* type */
@@ -231,3 +235,9 @@ h2 a .ico{color:var(--c,var(--brand))}
 .pager a,.pager span[aria-current]{min-width:38px;padding:8px 10px;text-align:center;border:1px solid var(--line);border-radius:10px;text-decoration:none;line-height:1}
 .pager span[aria-current]{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
 .pager .gap{color:var(--muted,#6b7280)}
+
+/* header: logo + country name underneath; country and language buttons identical */
+.logo small{display:block;margin-top:1px}
+.dd summary{min-width:62px;justify-content:center}
+.dd .cc{min-width:28px}
+.dd .globe{width:15px;height:15px}

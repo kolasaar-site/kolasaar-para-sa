@@ -14,7 +14,6 @@ SUBS = [
     (re.compile(r'لمقارنة أسعار الإلكترونيات \([^"<]*?(?:\.\.\.|ويُحدَّث يومياً\.)'), 'لمقارنة أسعار منتجات التجميل والعناية في المتاجر السعودية...'),
     (re.compile(r'(["\'(=])/sa/'), r'\1/para/sa/'),            # internal links
     (re.compile(r'(["\'(=])/tn/'), r'\1/para/tn/'),            # country switcher: Tunisian para
-    (re.compile(r'(<span class="nm"><b>[^<]*</b>)<small>[^<]*</small>'), r'\1'),   # the country is already shown in the country selector: do not print it twice in the header
     (re.compile(r'https://kolasaar\.com/para/static/'), 'https://kolasaar.com/static/'),   # shared assets live on the main site
     (re.compile(r'url=/ar/'), 'url=/para/sa/ar/'),
     (re.compile(r'تُحدَّث الأسعار مرة يومياً، ويظهر'), 'يظهر'),
