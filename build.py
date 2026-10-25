@@ -536,7 +536,12 @@ def fit(text, n=72):
     """Search titles over ~70 characters get cut: shorten a long product name at a word edge."""
     if len(text) <= n:
         return text
-    return text[:n].rsplit(" ", 1)[0].rstrip(" ,-–|")
+    out = text[:n].rsplit(" ", 1)[0].rstrip(" ,-–|")
+    _dang = {"من", "في", "و", "مع", "لـ", "ل", "ب", "بـ", "على", "عن", "الى", "إلى", "for", "with", "and", "of", "the", "in", "by", "to", "&", "from", "a", "an", "-", "–", "|", ","}
+    ws = out.split(" ")
+    while len(ws) > 2 and ws[-1].strip(",-–|").lower() in _dang:
+        ws.pop()
+    return " ".join(ws).rstrip(" ,-–|")
 
 
 def home_seo(lang):
@@ -753,6 +758,15 @@ if all_brands:
     render("category.html", ip, bictx)
 
 
+def _sv(k, v, lang):
+    """Spec value in the page language (values may be {'en','ar'} dicts; sizes carry a neutral unit)."""
+    if isinstance(v, dict):
+        return v[lang]
+    if lang == "ar" and k == "size":
+        return re.sub(r"\b(ml|fl oz|oz|kg|g|L)$", lambda m: {"ml": "مل", "g": "غ", "kg": "كغ", "L": "لتر", "oz": "أونصة", "fl oz": "أونصة سائلة"}[m.group(1)], str(v))
+    return v
+
+
 def product_faq(p, lang):
     b, offs = p["best"], p["offers"]
     n = p["name"][lang]
@@ -761,7 +775,7 @@ def product_faq(p, lang):
     stores = sep.join(o["store_name"] for o in offs)
     days = len(p["series"])
     labels = cfg["spec_labels"].get(p["category"], {})
-    spec_txt = sep.join(f"{labels[k][lang]}: {v}" for k, v in (p.get("specs") or {}).items() if k in labels and v not in ("-", "", None))
+    spec_txt = sep.join(f"{labels[k][lang]}: {_sv(k, v, lang)}" for k, v in (p.get("specs") or {}).items() if k in labels and v not in ("-", "", None))
     stock = [o["store_name"] for o in offs if o["in_stock"]]
     out = []
     if ar:
@@ -798,6 +812,23 @@ def product_summary(p, lang):
     pct = spread / hi["price"] * 100 if hi["price"] else 0
     instock = sum(1 for o in offs if o["in_stock"])
     ch = p.get("change7")
+    _sp = p.get("specs") or {}
+    _pre = ""
+    if _sp.get("type") or _sp.get("size"):
+        if lang == "ar":
+            _bits = [f"{n} " + (f"من فئة {_sv('type', _sp['type'], 'ar')}" if _sp.get("type") else "منتج للعناية")]
+            if _sp.get("size"): _bits.append(f"بحجم {_sv('size', _sp['size'], 'ar')}")
+            if _sp.get("spf"): _bits.append(f"بعامل حماية {_sp['spf']}")
+            if _sp.get("audience"): _bits.append(f"موجّه لفئة {_sv('audience', _sp['audience'], 'ar')}")
+            if _sp.get("feature"): _bits.append(f"ومن أبرز ما يميّزه: {_sv('feature', _sp['feature'], 'ar')}")
+            _pre = " ".join(_bits) + ". هذه التفاصيل مستخرجة من عنوان المنتج في المتاجر. "
+        else:
+            _bits = [f"{n} is " + (f"a {_sv('type', _sp['type'], 'en').lower()}" if _sp.get("type") else "a care product")]
+            if _sp.get("size"): _bits.append(f"sold in a {_sp['size']} size")
+            if _sp.get("spf"): _bits.append(f"rated {_sp['spf']}")
+            if _sp.get("audience"): _bits.append(f"aimed at {_sv('audience', _sp['audience'], 'en').lower()}")
+            if _sp.get("feature"): _bits.append(f"with {_sv('feature', _sp['feature'], 'en').lower()} as a key feature")
+            _pre = ", ".join(_bits) + ". These details are read from the product title at the stores. "
     if lang == "ar":
         s = (f"يتوفر {n} لدى {len(offs)} متاجر في السعودية، {instock} منها متوفر حالياً. أقل سعر {money(lo['price'], 'ar')} في {lo['store_name']}، "
              f"وأعلى سعر {money(hi['price'], 'ar')} في {hi['store_name']}، " + (f"أي فارق {money(spread, 'ar')} ({pct:.0f}٪) بين أرخص متجر وأغلاه." if spread > 0 else "والسعر متطابق بين المتاجر."))
@@ -808,7 +839,7 @@ def product_summary(p, lang):
              f"and the highest {plain_money(hi['price'])} at {hi['store_name']}" + (f": a gap of {plain_money(spread)} ({pct:.0f}%) between cheapest and priciest." if spread > 0 else ". The price is identical across stores."))
         if ch is not None and abs(ch) >= 0.5:
             s += f" The lowest price moved {ch:+.1f}% over the past 7 days."
-    return s
+    return _pre + s
 
 
 from collections import Counter as _Ctr
@@ -844,7 +875,7 @@ for p in items:
         if len(_g) in (8, 12, 13, 14) and sum(int(ch) * (3 if k % 2 == len(_g) % 2 else 1) for k, ch in enumerate(_g)) % 10 == 0:
             product_ld[f"gtin{len(_g)}"] = _g
         labels = cfg["spec_labels"][p["category"]]
-        specs = [(labels[k][lang], v) for k, v in p["specs"].items() if k in labels and v not in ("-", "", None)]
+        specs = [(labels[k][lang], _sv(k, v, lang)) for k, v in p["specs"].items() if k in labels and v not in ("-", "", None)]
         related = sorted((i for i in items if i["category"] == p["category"] and i["id"] != p["id"]),
                          key=lambda i: (i["brand"] != p["brand"], abs(i["best"]["price"] - p["best"]["price"])))[:6]
         hub = next(((bs, n_) for bn, bs, n_ in brand_hubs.get(p["category"], []) if bn == p["brand"]), None)

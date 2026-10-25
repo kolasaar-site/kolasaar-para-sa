@@ -126,18 +126,318 @@
   }
  ],
  "spec_labels": {
-  "visage": {},
-  "corps": {},
-  "cheveux": {},
-  "solaire": {},
-  "bebe": {},
-  "complements": {},
-  "hygiene": {},
-  "maquillage": {},
-  "parfum": {},
-  "minceur": {},
-  "materiel": {},
-  "other": {}
+  "visage": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "corps": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "cheveux": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "solaire": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "bebe": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "complements": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "hygiene": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "maquillage": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "parfum": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "minceur": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "materiel": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  },
+  "other": {
+   "type": {
+    "ar": "النوع",
+    "en": "Product type"
+   },
+   "size": {
+    "ar": "الحجم",
+    "en": "Size"
+   },
+   "count": {
+    "ar": "العدد (قطعة)",
+    "en": "Pieces"
+   },
+   "spf": {
+    "ar": "عامل الحماية",
+    "en": "Sun protection"
+   },
+   "audience": {
+    "ar": "الفئة",
+    "en": "Suitable for"
+   },
+   "feature": {
+    "ar": "أبرز ما يميّزه",
+    "en": "Key feature"
+   }
+  }
  },
  "stores": {
   "care-outlet": {
