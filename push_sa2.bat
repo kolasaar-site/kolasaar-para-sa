@@ -19,3 +19,10 @@ git commit -m "Header: country shown once, SA/TN switcher" >> "%~dp0push_sa2.log
 git push origin main >> "%~dp0push_sa2.log" 2>&1
 echo TN push exit=%errorlevel% >> "%~dp0push_sa2.log"
 popd
+rem --- Saudi main site: Beauty & Care tile/nav moved up ---
+pushd "%USERPROFILE%\Documents\saudi-price-compare"
+git add -A >> "%~dp0push_sa2.log" 2>&1
+git commit -m "Beauty & Care tile and nav link moved up" >> "%~dp0push_sa2.log" 2>&1
+git push origin main >> "%~dp0push_sa2.log" 2>&1
+echo MAIN push exit=%errorlevel% >> "%~dp0push_sa2.log"
+popd
