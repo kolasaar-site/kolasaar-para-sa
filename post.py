@@ -13,6 +13,7 @@ SUBS = [
     (re.compile(r'is an independent price comparison site for electronics \([^"<]*?(?:\.\.\.|updated daily\.)'), 'is an independent price comparison site for beauty and personal-care products in Saudi stores...'),
     (re.compile(r'لمقارنة أسعار الإلكترونيات \([^"<]*?(?:\.\.\.|ويُحدَّث يومياً\.)'), 'لمقارنة أسعار منتجات التجميل والعناية في المتاجر السعودية...'),
     (re.compile(r'(["\'(=])/sa/'), r'\1/para/sa/'),            # internal links
+    (re.compile(r'(["\'(=])/tn/'), r'\1/para/tn/'),            # country switcher: Tunisian para
     (re.compile(r'https://kolasaar\.com/para/static/'), 'https://kolasaar.com/static/'),   # shared assets live on the main site
     (re.compile(r'url=/ar/'), 'url=/para/sa/ar/'),
     (re.compile(r'تُحدَّث الأسعار مرة يومياً، ويظهر'), 'يظهر'),

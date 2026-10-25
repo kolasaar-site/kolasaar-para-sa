@@ -424,7 +424,7 @@ if COUNTRY not in _live:
     _live.append(COUNTRY)
 env.globals["country_code"] = COUNTRY
 env.globals["country_name"] = {"ar": _CN[COUNTRY][0], "en": _CN[COUNTRY][2 if _FR else 1]}
-env.globals["country_list"] = [{"code": c, "ar": _CN[c][0], "en": _CN[c][2 if _FR else 1], "l2": _L2.get(c, "en")} for c in _live]
+env.globals["country_list"] = [{"code": c, "ar": _CN[c][0], "en": _CN[c][1], "l2": _L2.get(c, "en")} for c in ("sa", "tn")]  # para sites: the two live parapharmacy countries (post.py maps /sa/ and /tn/ to /para/..)
 env.globals["lang_names"] = {"ar": "العربية", "en": "Français" if _FR else "English"}
 
 
