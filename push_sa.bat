@@ -12,3 +12,10 @@ git commit -m "Update SA data" >> push_sa.log 2>&1
 git push -u origin main >> push_sa.log 2>&1
 echo push exit=%errorlevel% >> push_sa.log
 echo DONE >> push_sa.log
+rem --- Tunisia para: commit + push the country switcher / header fix ---
+pushd "%USERPROFILE%\Downloads\para_push\kolasaar-para"
+git add -A >> "%~dp0push_sa.log" 2>&1
+git commit -m "Header: country shown once, SA/TN switcher" >> "%~dp0push_sa.log" 2>&1
+git push origin main >> "%~dp0push_sa.log" 2>&1
+echo TN push exit=%errorlevel% >> "%~dp0push_sa.log"
+popd
