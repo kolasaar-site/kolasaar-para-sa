@@ -93,3 +93,18 @@ open(OUT + "/_redirects", "w").write(
     "/para/sa /para/sa/ar/ 301\n/para/sa/ /para/sa/ar/ 301\n")
 open(OUT + "/robots.txt", "w").write(
     "User-agent: *\nAllow: /\n\nSitemap: https://kolasaar.com/para/sa/sitemap.xml\n")
+
+# --- launch gate: pages stay noindex until the owner verifies the data and creates sa/INDEX_OK
+if not os.path.exists("sa/INDEX_OK"):
+    import re as _re
+    for root, _, files in os.walk(OUT + "/para/sa"):
+        for f in files:
+            if f.endswith(".html"):
+                p = os.path.join(root, f)
+                s = open(p, encoding="utf-8").read()
+                s2 = _re.sub(r'<meta name="robots"[^>]*>', '<meta name="robots" content="noindex,nofollow">', s)
+                if s2 != s:
+                    open(p, "w", encoding="utf-8").write(s2)
+    open(OUT + "/_headers", "w").write("/para/sa/*\n  X-Robots-Tag: noindex, nofollow\n")
+    open(OUT + "/robots.txt", "w").write("User-agent: *\nDisallow: /\n")
+    print("noindex gate ON")
