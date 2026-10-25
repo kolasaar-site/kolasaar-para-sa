@@ -241,3 +241,11 @@ h2 a .ico{color:var(--c,var(--brand))}
 .dd summary{min-width:62px;justify-content:center}
 .dd .cc{min-width:28px}
 .dd .globe{width:15px;height:15px}
+@media (max-width:760px){
+  .top .bar{flex-wrap:wrap}
+  .logo{flex:1 1 0;min-width:0}
+  .logo .nm{min-width:0}
+  .logo b{line-height:1.25;overflow-wrap:anywhere}
+  .tools{flex:none}
+  .dd summary{min-width:56px}
+}
